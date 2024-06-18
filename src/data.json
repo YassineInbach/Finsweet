@@ -108,6 +108,30 @@
             "designation" : "Project Manager"
         }
     ],
+    "our_vision" : [
+        {
+            "title" : "Laser focus" , 
+            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "img" : "vision.png",
+            "alt" : "image-vision"
+        }
+    ],
+    "our_mission" : [
+        {
+            "title" : "Inspire, Innovate, Share" , 
+            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "img" : "mission.png",
+            "alt" : "image-mission"
+        }
+    ],
+    "our_design" : [
+        {
+            "title" : "Our designs solve problems" , 
+            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "img" : "design-solve.png",
+            "alt" : "image-about_us"
+        }
+    ],
     "process" : [
         {
             "src" : "line-icon.png",

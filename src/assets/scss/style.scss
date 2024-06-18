@@ -142,3 +142,16 @@
       }
    }
 }
+
+/* Styles section-modulable */
+.section-content{
+   @apply max-w-[595px];
+
+   h1{
+      @apply mb-[22px];
+   }
+   
+   p{
+      @apply max-w-[485px];
+   }
+}

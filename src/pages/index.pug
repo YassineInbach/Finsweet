@@ -59,13 +59,13 @@ block content
       else if index === 2
         li(class='col-span-1')
           img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-full h-[83%]')
-  section(class='bg-grey') 
-   div(class='container')
-    h2(class="title_before text-center max-w-[630px] mx-auto" data-content="Features") Design that solves problems, one product at a time
-    block cards
+  section(class='bg-grey')
+   block cards 
+    div(class='container')
+     h2(class="title_before text-center max-w-[630px] mx-auto" data-content="Features") Design that solves problems, one product at a time
      ul(class="features-list")
       each item in features 
-       li(class="features-list_item")
+       li(class="features-list_item bg-white")
         img(src=`./assets/images/${item.icon}`, alt=item.alt )
         h3=item.title 
         p=item.describe

@@ -153,5 +153,25 @@
             "title" : "Development" , 
             "describe" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
         }
+    ],
+    "benefits" : [
+        {
+            "icon" : "icon-hand.png",
+            "title" : "Customize with ease" , 
+            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.", 
+            "alt" : "image-hands"
+        },
+        {
+            "icon" : "icon-customization.png",
+            "title" : "Perfectly Responsive" , 
+            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim. ", 
+            "alt" : "image-customization"
+        },
+        {
+            "icon" : "icon-client.png",
+            "title" : "Friendly Support" , 
+            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.", 
+            "alt" : "image-client"
+        }
     ]
 }

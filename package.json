@@ -1,0 +1,28 @@
+{
+  "name": "finsweet",
+  "version": "1.0.0",
+  "description": "Use Gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "browser-sync": "^3.0.2",
+    "gulp": "^5.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-image": "^6.3.1",
+    "gulp-postcss": "^10.0.0",
+    "gulp-prettier": "^6.0.0",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.4",
+    "tailwindcss": "^3.4.4",
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "gulp-babel": "^8.0.0",
+    "gulp-uglify": "^3.0.2"
+  }
+}

@@ -104,7 +104,7 @@
     .features-list{
       @apply flex justify-center mt-[45px] flex-wrap gap-7;
       .features-list_item{
-         @apply px-[25px] py-[35px] max-w-[405px] bg-white;
+         @apply px-[25px] py-[35px] max-w-[405px];
          flex: 1 1 320px;
          &:hover{
             cursor: pointer;
@@ -124,7 +124,7 @@
 /*Styles button Prev / Next */
 .btn-click{
    position: absolute;
-   right: 0;
+   right: 10px;
    top: 60%;
       button{
       border-radius: 100%;
@@ -147,10 +147,10 @@
 .section-content{
    @apply max-w-[595px];
 
-   h1{
-      @apply mb-[22px];
+   h2{
+      @apply text-xl mb-[22px];
    }
-   
+
    p{
       @apply max-w-[485px];
    }

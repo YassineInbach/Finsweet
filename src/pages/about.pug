@@ -5,7 +5,7 @@ block title
 
 block content 
  block section-modulable
-  section(class='container flex justify-between space-x-2')
+  section(class='container flex justify-between gap-2')
    each item in our_design
     div(class="section-content")
      h1(class="title_before" data-content="About us")=item.title
@@ -30,16 +30,37 @@ block content
      p=item.describe
  div(class='bg-accent')
   block section-modulable
-   section(class='container flex justify-between space-x-2')
+   section(class='container flex justify-between gap2')
     each item in our_mission
      div(class="section-content")
-      h1(class="title_before" data-content="Our mission")=item.title
+      h2(class="title_before" data-content="Our mission")=item.title
       p=item.describe
      img(src=`./assets/images/${item.img}`, alt=item.alt , class="hero-section__img")     
   block section-modulable
-   section(class='container flex justify-between flex-row-reverse pt-0 space-x-2')
+   section(class='container flex justify-between flex-row-reverse pt-0 gap-2')
     each item in our_vision
      div(class="section-content")
-      h1(class="title_before" data-content="Our mission")=item.title
+      h2(class="title_before" data-content="Our vision")=item.title
       p=item.describe
      img(src=`./assets/images/${item.img}`, alt=item.alt , class="hero-section__img")
+ section 
+  block cards 
+    div(class='container')
+     h2(class="text-center max-w-[630px] mx-auto") The benefits of working with us
+     ul(class="features-list")
+      each item in benefits 
+       li(class="features-list_item bg-grey")
+        img(src=`./assets/images/${item.icon}`, alt=item.alt )
+        h3=item.title 
+        p=item.describe    
+  ul(class="container flex justify-center flex-wrap gap-9 mt-[70px] ") 
+   li 
+    img(src="./assets/images/logo-1.png", alt="")      
+   li 
+    img(src="./assets/images/logo-2.png", alt="") 
+   li 
+    img(src="./assets/images/logo-3.png", alt="")
+   li 
+    img(src="./assets/images/logo-4.png", alt="")  
+   li 
+    img(src="./assets/images/logo-5.png", alt="") 

@@ -1,0 +1,144 @@
+/* Importation de la police Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Importation de Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Définition des styles de base */
+@layer base {
+   @import './base/reset';
+   @import './base/typography';
+   section{
+      @apply py-[100px];
+   }
+}
+
+/* Définition des styles de composants */
+@layer components {
+   /* Styles pour les liens */
+   .link {
+      position: relative;
+      &::after{
+        content: "";
+        position: absolute;
+        background-color: theme("colors.yellow");
+        bottom: -12px;
+        height: 6px;
+        width: 6px;
+        left: 50%;
+        transform: translate(-50%, 0) rotate(45deg);
+        opacity: 0;
+        transition: opacity 0.5s ease;
+        
+      }
+      &:hover::after{
+         opacity: 1;
+        }
+      &:hover {
+         color: theme('colors.yellow');
+         transition: color 0.5s linear;
+         
+      }
+   }
+
+   /* Styles pour les éléments actifs */
+   .active {
+      @apply relative text-yellow;
+      &::after{
+         content: "";
+         position: absolute;
+         background-color: theme("colors.yellow");
+         bottom: -12px;
+         height: 6px;
+         width: 6px;
+         left: 50%;
+         transform: translate(-50%, 0) rotate(45deg);
+         }
+   }
+
+   /* Styles pour les boutons */
+   .btn {
+      color: theme('colors.dark-blue');
+      background-color: theme('colors.yellow');
+      padding: 16px 48px;
+      border-radius: 30px;
+   }
+
+   /* Styles pour les conteneurs */
+   .container {
+      max-width: 1280px;
+      width: 100%;
+      margin: 0 auto;
+
+      /* Media-query pour les écrans de largeur inférieure à 1290px */
+      @media screen and (max-width: 1290px) {
+         @apply px-[20px];
+      }
+   }
+
+   /* Styles pour la disposition flex */
+   .flex {
+      display: flex;
+      align-items: center;
+   }
+
+   /* Styles pour la justification entre les éléments */
+   .justify-between {
+      justify-content: space-between;
+   }
+
+   /*Styles hero-section__img */
+   .hero-section__img{
+      @apply w-1/2;
+   }
+
+   /* Styles title_before */
+   .title_before::before{
+     @apply block  text-xs;
+     content: attr(data-content);
+    }
+
+    /*Styles cards features*/
+    .features-list{
+      @apply flex justify-center mt-[45px] flex-wrap gap-7;
+      .features-list_item{
+         @apply px-[25px] py-[35px] max-w-[405px] bg-white;
+         flex: 1 1 320px;
+         &:hover{
+            cursor: pointer;
+            border:2px solid theme('colors.royal-blue');
+            transition: border 0.2s ease;
+         }
+         img{
+            @apply mb-[15px];
+         }
+         p{
+            @apply mt-[15px];
+         }
+      }
+    }
+}
+
+/*Styles button Prev / Next */
+.btn-click{
+   position: absolute;
+   right: 0;
+   top: 60%;
+      button{
+      border-radius: 100%;
+      padding: 8px 14px;
+      border: 0;
+      &.slick-prev{
+         margin-right: 12px;
+         background-color: theme('colors.grey');
+      }
+      &.slick-next{
+         background-color: theme('colors.royal-blue');
+      }
+      img{
+         width: 10px;
+      }
+   }
+}

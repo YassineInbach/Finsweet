@@ -4,12 +4,13 @@ block title
  title Finsweet-About
 
 block content 
- block hero-section__about
-  section(class='container flex justify-between')
-   div(class="max-w-[595px]")
-    h1(class="title_before mb-[22px]" data-content="About Us") Our designs solve problems
-    p(class='max-w-[485px]') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-   img(src="./assets/images/design-solve.png", alt="image-about" , class="hero-section__img") 
+ block section-modulable
+  section(class='container flex justify-between space-x-2')
+   each item in our_design
+    div(class="section-content")
+     h1(class="title_before" data-content="About us")=item.title
+     p=item.describe
+    img(src=`./assets/images/${item.img}`, alt=item.alt , class="hero-section__img") 
  section(class="container bg-[#F4F5F5] pb-0") 
   div(class="flex items-end justify-between space-x-4 px-[70px] pb-[80px]")
    div(class="max-w-[515px]") 
@@ -27,4 +28,18 @@ block content
      img(src= `./assets/images/${item.src}`, alt="line-icon" , class="mb-[20px] w-full") 
      h3(class="mb-3")=item.title 
      p=item.describe
- 
+ div(class='bg-accent')
+  block section-modulable
+   section(class='container flex justify-between space-x-2')
+    each item in our_mission
+     div(class="section-content")
+      h1(class="title_before" data-content="Our mission")=item.title
+      p=item.describe
+     img(src=`./assets/images/${item.img}`, alt=item.alt , class="hero-section__img")     
+  block section-modulable
+   section(class='container flex justify-between flex-row-reverse pt-0 space-x-2')
+    each item in our_vision
+     div(class="section-content")
+      h1(class="title_before" data-content="Our mission")=item.title
+      p=item.describe
+     img(src=`./assets/images/${item.img}`, alt=item.alt , class="hero-section__img")

@@ -1,0 +1,133 @@
+{
+    "works" : [
+        {
+            "img" : "strategy.svg",
+            "title" : "Strategy" ,
+            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
+        },
+        {
+            "img" : "wireframing.png",
+            "title" : "Wireframing" ,
+            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
+        },
+        {
+            "img" : "design.png",
+            "title" : "Design",
+            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
+        },
+        {
+            "img" : "development.png",
+            "title" : "Development",
+            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
+        }
+    ],
+    "projects" : [
+        {
+            "src": "workhub.png",
+            "alt": "workhub",
+             "title" : "Workhub office Webflow Webflow Design",
+             "description": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam",
+             "href": "#"
+        },
+        {
+            "src": "unisaas.png",
+            "alt": "unisaas",
+             "title" : "Unisaas Website Design",
+             "href": "#"
+        },
+        {
+            "src": "workhub.png",
+            "alt": "workhub",
+             "title" : "Workhub office Webflow Webflow Design",
+             "description": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam",
+             "href": "#"
+        },
+        {
+            "src": "culture.png",
+            "alt": "culture"
+        }
+    ],
+    "features" : [
+        {
+            "icon" : "icon-client.png",
+            "title" : "Uses Client First" , 
+            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ", 
+            "alt" : "image-client"
+        },
+        {
+            "icon" : "icon-revision.png",
+            "title" : "Two Free Revision Round" , 
+            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. " ,
+            "alt" : "image-revision"
+        },
+        {
+            "icon" : "icon-customization.png",
+            "title" : "Template Customization" , 
+            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
+            "alt" : "image-customization" 
+        },
+        {
+            "icon" : "icon-support.png",
+            "title" : "24/7 Support" , 
+            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
+            "alt" : "image-support" 
+        },
+        {
+            "icon" : "icon-delivery.png",
+            "title" : "Quick Delivery" , 
+            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. " ,
+            "alt" : "image-delivery"
+        },
+        {
+            "icon" : "icon-hand.png",
+            "title" : "Hands-on approach" , 
+            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. " ,
+            "alt" : "image-hands"
+        }
+    ],
+    "about" : [
+        {
+            "describe": "\"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.\"",
+            "img" : "cto.png",
+            "alt" : "image-Jenny Wilson" , 
+            "name" : "Jenny Wilson" ,
+            "designation" : "Vice President"
+        },
+        {
+            "describe" :"\"This is the top agency we've collaborated with. They have a deep understanding of our product and efficiently implement new features.\"",
+            "img" : "design-lead.png",
+            "alt" : "image-Paul Jones" , 
+            "name" : "Paul Jones" ,
+            "designation" : "Design Lead"
+        },
+        {
+            "describe" :"\"This is the best agency we've collaborated with. They grasp our product well and focus on adding new features effectively.\"" ,
+            "img" : "project-manager.png",
+            "alt" : "image-Sara Hardin" , 
+            "name" : "Sara Hardin" ,
+            "designation" : "Project Manager"
+        }
+    ],
+    "process" : [
+        {
+            "src" : "line-icon.png",
+            "title" : "Planning" , 
+            "describe" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            "src" : "line-icon.png",
+            "title" : "Conception" , 
+            "describe" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            "src" : "line-icon.png",
+            "title" : "Design" , 
+            "describe" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            "src" : "line-icon.png",
+            "title" : "Development" , 
+            "describe" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        }
+    ]
+}

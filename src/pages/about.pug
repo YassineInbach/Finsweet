@@ -1,0 +1,30 @@
+extends layout.pug
+
+block title 
+ title Finsweet-About
+
+block content 
+ block hero-section__about
+  section(class='container flex justify-between')
+   div(class="max-w-[595px]")
+    h1(class="title_before mb-[22px]" data-content="About Us") Our designs solve problems
+    p(class='max-w-[485px]') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+   img(src="./assets/images/design-solve.png", alt="image-about" , class="hero-section__img") 
+ section(class="container bg-[#F4F5F5] pb-0") 
+  div(class="flex items-end justify-between space-x-4 px-[70px] pb-[80px]")
+   div(class="max-w-[515px]") 
+    h2(class="title_before text-2xl" data-content="Who we are") Goal focussed
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+   div(class="max-w-[515px]") 
+    h2(class="text-2xl") Continuous improvement
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
+  img(src="./assets/images/focussed-image.png", alt="image-focussed" , class='w-full')  
+ section(class='container') 
+  h2(class="text-center") The process we follow
+  ul(class="flex justify-center flex-wrap gap-x-5 gap-y-10 mt-[48px]") 
+   each item in process 
+    li(class="max-w-[270px]") 
+     img(src= `./assets/images/${item.src}`, alt="line-icon" , class="mb-[20px] w-full") 
+     h3(class="mb-3")=item.title 
+     p=item.describe
+ 

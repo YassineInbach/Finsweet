@@ -1,0 +1,91 @@
+extends layout.pug
+
+block title 
+  title Finsweet-Home 
+
+block content 
+  block hero_section
+    section(class="bg-tint-blue")
+      div(class="container flex justify-between") 
+        div(class="max-w-[585px]") 
+          h1(class="text-white mb-[24px]") Building stellar websites for early startups
+          p(class="text-grey mb-[48px]") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+          ul(class="flex space-x-[40px]") 
+            li
+              a(href="#" , class="btn") View our work
+            li 
+              a(href="#" , class="text-yellow") View Pricing 
+                i(class="fa-solid fa-arrow-right text-yellow ml-2")
+        img(src="./assets/images/illustration.svg", alt="illustration" , class="hero-section__img") 
+  section(class='bg-grey')
+    div(class='container flex items-start justify-between')
+      div(class="max-w-[400px]") 
+        h2(class="mb-[16px]") How we work
+        p(class="mb-[16px]") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+        a(href="#" , class="text-royal-blue") Get in touch with us
+          i(class="fa-solid fa-arrow-right text-royal-blue ml-2")
+      ul(class='grid grid-cols-2 gap-[48px]')
+        each item in works
+          li(class='max-w-[300px]')
+            img(src=`./assets/images/${item.img}`, alt="" )  
+            h3(class='my-[8px]')=item.title 
+            p=item.describe 
+  section(class='container pb-2') 
+    div(class='flex justify-between')
+      h2 View our projects
+      a(href="#") View More
+        i(class="fa-solid fa-arrow-right text-dark-blue ml-2")
+    ul(class='grid grid-cols-[70%_30%] gap-x-[10px] mt-[64px]') 
+     each project, index in projects
+      if index === 0
+        li(class='relative row-span-3')
+          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-[97.3%] h-[80%]')
+          div(class='absolute top-0 bg-tint-blue bg-opacity-85 h-[80%] w-[48%]') 
+            div(class='absolute bottom-[40px] px-[30px]') 
+              h3(class='text-sm text-white mb-[16px]')= project.title
+              p(class='text-grey mb-[25px]')= project.description
+              a(href=project.href , class='text-yellow') 
+                | View projet 
+                i(class="fa-solid fa-arrow-right text-yellow ml-2")
+      else if index === 1
+        li(class='relative col-span-1')
+          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-full h-[83%] bg-grey')
+          div(class='absolute top-0 bg-tint-blue bg-opacity-75 h-[90%] w-full') 
+            div(class='absolute bottom-[20px] px-[30px]')
+              h3(class='text-sm text-white mb-[16px]')= project.title
+              a(href=project.href , class='text-yellow') 
+                | View projet 
+                i(class="fa-solid fa-arrow-right text-yellow ml-2")
+      else if index === 2
+        li(class='col-span-1')
+          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-full h-[83%]')
+  section(class='bg-grey') 
+   div(class='container')
+    h2(class="title_before text-center max-w-[630px] mx-auto" data-content="Features") Design that solves problems, one product at a time
+    block cards
+     ul(class="features-list")
+      each item in features 
+       li(class="features-list_item")
+        img(src=`./assets/images/${item.icon}`, alt=item.alt )
+        h3=item.title 
+        p=item.describe
+  section(class='container flex items-start justify-between relative space-x-1')
+   div(class='max-w-[409px]')
+    h2(class='mb-[16px]') What our clients say about us
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+   ul(class='single-item  max-w-[650px] ')
+    each item in about
+     li 
+      article 
+       p(class="text-base font-medium")=item.describe
+       div(class="flex space-x-3 mt-[20px]")
+        img(src=`./assets/images/${item.img}`, alt=item.alt , class="w-[8%]")
+        div 
+         h3=item.name
+         h4(class='text-xs font-light')=item.designation
+   div(class="btn-click") 
+    button(type="button" class="slick-prev")
+     img(src="./assets/images/icon-prev.png", alt="")
+    button(type="button" class="slick-next") 
+     img(src="./assets/images/icon-next.png", alt="")         
+   

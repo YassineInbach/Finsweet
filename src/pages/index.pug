@@ -38,9 +38,9 @@ block content
     ul(class='grid grid-cols-[70%_30%] gap-x-[10px] mt-[64px]') 
      each project, index in projects
       if index === 0
-        li(class='relative row-span-3')
-          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-[97.3%] h-[80%]')
-          div(class='absolute top-0 bg-tint-blue bg-opacity-85 h-[80%] w-[48%]') 
+        li(class='relative row-span-2')
+          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-[97%] h-[91.5%]')
+          div(class='absolute top-0 bg-tint-blue bg-opacity-85 h-[91.5%] w-[48%]') 
             div(class='absolute bottom-[40px] px-[30px]') 
               h3(class='text-sm text-white mb-[16px]')= project.title
               p(class='text-grey mb-[25px]')= project.description

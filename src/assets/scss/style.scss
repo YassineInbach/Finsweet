@@ -124,22 +124,21 @@
 /*Styles button Prev / Next */
 .btn-click{
    position: absolute;
-   right: 10px;
+   right: 8px;
    top: 60%;
-      button{
-      border-radius: 100%;
-      padding: 8px 14px;
-      border: 0;
-      &.slick-prev{
-         margin-right: 12px;
-         background-color: theme('colors.grey');
-      }
-      &.slick-next{
-         background-color: theme('colors.royal-blue');
-      }
-      img{
-         width: 10px;
-      }
+}
+/* ALL button slick / Prev / Next */ 
+button{
+   padding: 8px 14px;
+   border: 0;
+   &.slick-prev{
+      margin-right: 16px;
+   }
+   &.slick-next{
+      background-color: theme('colors.royal-blue');
+   }
+   img{
+      width: 10px;
    }
 }
 
@@ -154,4 +153,26 @@
    p{
       @apply max-w-[485px];
    }
+}
+
+/* Styles multiple-items carousel */
+.multiple-items{
+   .slick-track{
+      @apply flex gap-10;
+   li{
+      @apply text-center bg-white p-[48px] ;
+   }
+
+   img{
+      @apply inline w-[60%]  mb-2;
+   }
+
+   h3{
+      @apply font-semibold
+   }
+
+   h4{
+      @apply text-xs font-light;
+   }
+}
 }

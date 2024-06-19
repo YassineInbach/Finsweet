@@ -39,7 +39,12 @@ gulp.task("CopyPug", async function () {
               projects : jsonData.projects,
               features : jsonData.features,
               about : jsonData.about,
-              process : jsonData.process
+              process : jsonData.process,
+              our_vision : jsonData.our_vision,
+              our_mission : jsonData.our_mission,
+              our_design : jsonData.our_design,
+              benefits : jsonData.benefits,
+              team : jsonData.team
             }
             })
             )

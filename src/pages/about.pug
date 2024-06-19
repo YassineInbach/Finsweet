@@ -64,3 +64,18 @@ block content
     img(src="./assets/images/logo-4.png", alt="")  
    li 
     img(src="./assets/images/logo-5.png", alt="") 
+ section(class='bg-grey') 
+  div(class="container")
+   h2(class='text-center') Meet our team
+   ul(class="multiple-items flex justify-center mt-[48px] space-x-5") 
+    each item in team
+     li
+      img(src=`assets/images/${item.img}`)
+      h3=item.name 
+      h4=item.designation
+   div(class='flex justify-center mx-auto mt-[40px]') 
+    button(type="button" , class="slick-prev bg-white")
+     img(src="./assets/images/icon-prev.png", alt="icon-prev")
+    button(type="button" , class="slick-next") 
+     img(src="./assets/images/icon-next.png", alt="icon-next")         
+      

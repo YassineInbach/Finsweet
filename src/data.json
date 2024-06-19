@@ -173,5 +173,27 @@
             "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.", 
             "alt" : "image-client"
         }
+    ],
+    "team" : [
+        {
+            "img" : "ceo.png",
+            "name" : "John Smith",
+            "designation" : "CEO"
+        },
+        {
+            "img" : "cto.png",
+            "name" : "Simon Adams",
+            "designation" : "CTO"
+        },
+        {
+            "img" : "design-lead.png",
+            "name" : "Paul Jones",
+            "designation" : "Design Lead"
+        },
+        {
+            "img" : "project-manager.png",
+            "name" : "Sara Hardin",
+            "designation" : "Project Manager"
+        }
     ]
 }

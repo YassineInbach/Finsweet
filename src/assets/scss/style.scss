@@ -17,46 +17,46 @@
 
 /* Définition des styles de composants */
 @layer components {
-   /* Styles pour les liens */
-   .link {
-      position: relative;
-      &::after{
-        content: "";
-        position: absolute;
-        background-color: theme("colors.yellow");
-        bottom: -12px;
-        height: 6px;
-        width: 6px;
-        left: 50%;
-        transform: translate(-50%, 0) rotate(45deg);
-        opacity: 0;
-        transition: opacity 0.5s ease;
-        
-      }
-      &:hover::after{
-         opacity: 1;
-        }
-      &:hover {
-         color: theme('colors.yellow');
-         transition: color 0.5s linear;
-         
-      }
+  /* Classe utilitaire pour les styles communs */
+.common-after {
+   content: "";
+   position: absolute;
+   background-color: theme("colors.yellow");
+   bottom: -12px;
+   height: 6px;
+   width: 6px;
+   left: 50%;
+   transform: translate(-50%, 0) rotate(45deg);
+ }
+ 
+ /* Styles pour les liens */
+ .link {
+   position: relative;
+ 
+   &::after {
+     @extend .common-after;
+     opacity: 0;
+     transition: opacity 0.5s ease;
    }
-
-   /* Styles pour les éléments actifs */
-   .active {
-      @apply relative text-yellow;
-      &::after{
-         content: "";
-         position: absolute;
-         background-color: theme("colors.yellow");
-         bottom: -12px;
-         height: 6px;
-         width: 6px;
-         left: 50%;
-         transform: translate(-50%, 0) rotate(45deg);
-         }
+ 
+   &:hover::after {
+     opacity: 1;
    }
+ 
+   &:hover {
+     color: theme('colors.yellow');
+     transition: color 0.5s linear;
+   }
+ }
+ 
+ /* Styles pour les éléments actifs */
+ .active {
+   @apply relative text-yellow;
+ 
+   &::after {
+     @extend .common-after;
+   }
+ }
 
    /* Styles pour les boutons */
    .btn {

@@ -17,7 +17,7 @@ $(document).ready(function() {
     $('.multiple-items').slick({
       speed: 2000,
       infinite: true,
-      slidesToShow: 3,
+      slidesToShow:3,
       slidesToScroll: 1,
       prevArrow: $('.slick-prev'),
       nextArrow: $('.slick-next'),

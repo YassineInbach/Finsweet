@@ -91,13 +91,14 @@
 
    /*Styles hero-section__img */
    .hero-section__img{
-      @apply w-1/2;
+      @apply w-[45%];
    }
 
    /* Styles title_before */
    .title_before::before{
      @apply block  text-xs;
      content: attr(data-content);
+     line-height: 35px;
     }
 
     /*Styles cards features*/
@@ -119,7 +120,6 @@
          }
       }
     }
-}
 
 /*Styles button Prev / Next */
 .btn-click{
@@ -144,14 +144,14 @@ button{
 
 /* Styles section-modulable */
 .section-content{
-   @apply max-w-[595px];
-
+   @apply max-w-[624px];
+   
    h2{
-      @apply text-xl mb-[22px];
+      @apply text-xl;
    }
 
    p{
-      @apply max-w-[485px];
+      @apply mt-[10px];
    }
 }
 
@@ -176,3 +176,82 @@ button{
    }
 }
 }
+
+/* Styles for cards_plan */
+.cards_plan {
+   article {
+     @apply px-[48px] py-[64px] rounded-lg;
+     h2{
+      &::after{
+         @apply text-xs font-normal ml-3 align-top;
+         color:theme('colors.royal-blue');
+         content: attr(data-content);
+      }
+     }
+     ul {
+       @apply mb-[50px];
+ 
+       li {
+         @apply leading-[35px];
+ 
+         &::before {
+           @apply mr-[15px] align-sub;
+           content: url("../images/pointer.png");
+         }
+       }
+     }
+ 
+     .btn {
+       @apply flex mx-auto;
+     }
+   }
+ 
+   /* First and Last articles */
+   & > :first-child,
+   & > :last-child {
+     background-color: theme('colors.grey');
+ 
+     .btn {
+       background-color: theme('colors.dark-blue');
+       a{
+         color: theme('colors.grey');
+       }
+     }
+   }
+ 
+   /* Specific styles for the first article */
+   & > :first-child {
+     ul {
+       @apply mt-[78px];
+     }
+   }
+ 
+   /* Specific styles for the second article */
+   & > :nth-child(2) {
+     @apply bg-[#1C1E53];
+     h2{
+      &::after{
+         color:theme('colors.yellow');
+      }
+     }
+ 
+     h2,
+     h3,
+     li,
+     p {
+       @apply text-white;
+     }
+ 
+     ul {
+       margin-top: 53px;
+     }
+   }
+ 
+   /* Specific styles for the last article */
+   & > :last-child {
+     ul {
+       @apply mt-[39px];
+     }
+   }
+ }
+} 

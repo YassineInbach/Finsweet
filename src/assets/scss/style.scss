@@ -157,24 +157,24 @@ button{
 
 /* Styles multiple-items carousel */
 .multiple-items{
-   .slick-track{
-      @apply flex gap-10;
-   li{
-      @apply text-center bg-white p-[48px] ;
+      .slick-track{
+         @apply flex justify-center space-x-8;
+      li{
+         @apply text-center bg-white px-[64px] py-[48px] ;
+      }
+   
+      img{
+         @apply inline w-[60%]  mb-2;
+      }
+   
+      h3{
+         @apply font-semibold
+      }
+   
+      h4{
+         @apply text-xs font-light;
+      }
    }
-
-   img{
-      @apply inline w-[60%]  mb-2;
-   }
-
-   h3{
-      @apply font-semibold
-   }
-
-   h4{
-      @apply text-xs font-light;
-   }
-}
 }
 
 /* Styles for cards_plan */
@@ -243,7 +243,7 @@ button{
      }
  
      ul {
-       margin-top: 53px;
+       margin-top: 54px;
      }
    }
  

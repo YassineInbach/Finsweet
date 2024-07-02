@@ -1,193 +1,260 @@
 {
-    "works" : [
+    "works": [
         {
-            "img" : "strategy.svg",
-            "title" : "Strategy" ,
-            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
+            "img": "strategy.svg",
+            "title": "Strategy",
+            "describe": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam."
         },
         {
-            "img" : "wireframing.png",
-            "title" : "Wireframing" ,
-            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
+            "img": "wireframing.png",
+            "title": "Wireframing",
+            "describe": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam."
         },
         {
-            "img" : "design.png",
-            "title" : "Design",
-            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
+            "img": "design.png",
+            "title": "Design",
+            "describe": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam."
         },
         {
-            "img" : "development.png",
-            "title" : "Development",
-            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam ."
+            "img": "development.png",
+            "title": "Development",
+            "describe": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam."
         }
     ],
-    "projects" : [
+    "projects": [
         {
             "src": "workhub.png",
             "alt": "workhub",
-             "title" : "Workhub office Webflow Webflow Design",
-             "description": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam",
-             "href": "#"
+            "title": "Workhub office Webflow Webflow Design",
+            "description": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam",
+            "href": "#"
         },
         {
             "src": "unisaas.png",
             "alt": "unisaas",
-             "title" : "Unisaas Website Design",
-             "href": "#"
+            "title": "Unisaas Website Design",
+            "href": "#"
         },
-      
         {
             "src": "culture.png",
             "alt": "culture"
         }
     ],
-    "features" : [
+    "features": [
         {
-            "icon" : "icon-client.png",
-            "title" : "Uses Client First" , 
-            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ", 
-            "alt" : "image-client"
+            "icon": "icon-client.png",
+            "title": "Uses Client First",
+            "describe": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+            "alt": "image-client"
         },
         {
-            "icon" : "icon-revision.png",
-            "title" : "Two Free Revision Round" , 
-            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. " ,
-            "alt" : "image-revision"
+            "icon": "icon-revision.png",
+            "title": "Two Free Revision Round",
+            "describe": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+            "alt": "image-revision"
         },
         {
-            "icon" : "icon-customization.png",
-            "title" : "Template Customization" , 
-            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
-            "alt" : "image-customization" 
+            "icon": "icon-customization.png",
+            "title": "Template Customization",
+            "describe": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+            "alt": "image-customization"
         },
         {
-            "icon" : "icon-support.png",
-            "title" : "24/7 Support" , 
-            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. ",
-            "alt" : "image-support" 
+            "icon": "icon-support.png",
+            "title": "24/7 Support",
+            "describe": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+            "alt": "image-support"
         },
         {
-            "icon" : "icon-delivery.png",
-            "title" : "Quick Delivery" , 
-            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. " ,
-            "alt" : "image-delivery"
+            "icon": "icon-delivery.png",
+            "title": "Quick Delivery",
+            "describe": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+            "alt": "image-delivery"
         },
         {
-            "icon" : "icon-hand.png",
-            "title" : "Hands-on approach" , 
-            "describe" : "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi. " ,
-            "alt" : "image-hands"
+            "icon": "icon-hand.png",
+            "title": "Hands-on approach",
+            "describe": "Euismod faucibus turpis eu gravida mi. Pellentesque et velit aliquam sed faucib turpis eu gravida mi. Pellentesque et velit aliquam sed mi.",
+            "alt": "image-hands"
         }
     ],
-    "about" : [
+    "about": [
         {
             "describe": "\"The best agency we’ve worked with so far. They understand our product and are able to add new features with a great focus.\"",
-            "img" : "cto.png",
-            "alt" : "image-Jenny Wilson" , 
-            "name" : "Jenny Wilson" ,
-            "designation" : "Vice President"
+            "img": "cto.png",
+            "alt": "image-Jenny Wilson",
+            "name": "Jenny Wilson",
+            "designation": "Vice President"
         },
         {
-            "describe" :"\"This is the top agency we've collaborated with. They have a deep understanding of our product and efficiently implement new features.\"",
-            "img" : "design-lead.png",
-            "alt" : "image-Paul Jones" , 
-            "name" : "Paul Jones" ,
-            "designation" : "Design Lead"
+            "describe": "\"This is the top agency we've collaborated with. They have a deep understanding of our product and efficiently implement new features.\"",
+            "img": "design-lead.png",
+            "alt": "image-Paul Jones",
+            "name": "Paul Jones",
+            "designation": "Design Lead"
         },
         {
-            "describe" :"\"This is the best agency we've collaborated with. They grasp our product well and focus on adding new features effectively.\"" ,
-            "img" : "project-manager.png",
-            "alt" : "image-Sara Hardin" , 
-            "name" : "Sara Hardin" ,
-            "designation" : "Project Manager"
+            "describe": "\"This is the best agency we've collaborated with. They grasp our product well and focus on adding new features effectively.\"",
+            "img": "project-manager.png",
+            "alt": "image-Sara Hardin",
+            "name": "Sara Hardin",
+            "designation": "Project Manager"
         }
     ],
-    "our_vision" : [
+    "about_groupes" : [
         {
-            "title" : "Laser focus" , 
-            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "img" : "vision.png",
-            "alt" : "image-vision"
+        "our_vision": 
+        {
+            "title": "Laser focus",
+            "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "img": "vision.png",
+            "alt": "image-vision"
+        },
+        "our_mission": 
+        {
+            "title": "Inspire, Innovate, Share",
+            "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+            "img": "mission.png",
+            "alt": "image-mission"
+        },
+        "our_design": 
+        {
+            "title": "Our designs solve problems",
+            "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+            "img": "design-solve.png",
+            "alt": "image-about_us"
+        }
+    
         }
     ],
-    "our_mission" : [
+    "process": [
         {
-            "title" : "Inspire, Innovate, Share" , 
-            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-            "img" : "mission.png",
-            "alt" : "image-mission"
+            "src": "line-icon.png",
+            "title": "Planning",
+            "describe": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            "src": "line-icon.png",
+            "title": "Conception",
+            "describe": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            "src": "line-icon.png",
+            "title": "Design",
+            "describe": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+        },
+        {
+            "src": "line-icon.png",
+            "title": "Development",
+            "describe": "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
         }
     ],
-    "our_design" : [
+    "benefits": [
         {
-            "title" : "Our designs solve problems" , 
-            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
-            "img" : "design-solve.png",
-            "alt" : "image-about_us"
+            "icon": "icon-hand.png",
+            "title": "Customize with ease",
+            "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
+            "alt": "image-hands"
+        },
+        {
+            "icon": "icon-customization.png",
+            "title": "Perfectly Responsive",
+            "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
+            "alt": "image-customization"
+        },
+        {
+            "icon": "icon-client.png",
+            "title": "Friendly Support",
+            "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.",
+            "alt": "image-client"
         }
     ],
-    "process" : [
+    "team": [
         {
-            "src" : "line-icon.png",
-            "title" : "Planning" , 
-            "describe" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+            "img": "ceo.png",
+            "name": "John Smith",
+            "designation": "CEO"
         },
         {
-            "src" : "line-icon.png",
-            "title" : "Conception" , 
-            "describe" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+            "img": "cto.png",
+            "name": "Simon Adams",
+            "designation": "CTO"
         },
         {
-            "src" : "line-icon.png",
-            "title" : "Design" , 
-            "describe" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+            "img": "design-lead.png",
+            "name": "Paul Jones",
+            "designation": "Design Lead"
         },
         {
-            "src" : "line-icon.png",
-            "title" : "Development" , 
-            "describe" : "Lorem ipsum dolor sit amet, consetetur sadipscing elitr."
+            "img": "project-manager.png",
+            "name": "Sara Hardin",
+            "designation": "Project Manager"
         }
     ],
-    "benefits" : [
+    "features_groupes": [
         {
-            "icon" : "icon-hand.png",
-            "title" : "Customize with ease" , 
-            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.", 
-            "alt" : "image-hands"
-        },
-        {
-            "icon" : "icon-customization.png",
-            "title" : "Perfectly Responsive" , 
-            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim. ", 
-            "alt" : "image-customization"
-        },
-        {
-            "icon" : "icon-client.png",
-            "title" : "Friendly Support" , 
-            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.", 
-            "alt" : "image-client"
+            "client": {
+                "img": "client-first.png",
+                "title": "Top agencies and freelancers around the world use Client-first",
+                "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation."
+            },
+            "free_revision": {
+                "img": "free-revision.png",
+                "title": "Get free Revisions and one week of free maintenance",
+                "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            },
+            "priority_support": {
+                "img": "priority-support.png",
+                "title": "Working with us, you will be getting 24/7 priority support",
+                "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            },
+            "quick_delivery": {
+                "img": "quick-delivery.png",
+                "title": "Guaranteed 1 week delivery for standard five pager website",
+                "describe": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+            }
         }
     ],
-    "team" : [
+"pricing": [
         {
-            "img" : "ceo.png",
-            "name" : "John Smith",
-            "designation" : "CEO"
+            "price": "$299",
+            "dataContent" : "Per Design",
+            "title": "Landing Page",
+            "describe": "When you’re ready to go beyond prototyping in Figma,",
+            "list": [
+                "All limited links",
+                "Own analytics platform",
+                "Chat support",
+                "Optimize hashtags",
+                "Unlimited users"
+            ]
         },
         {
-            "img" : "cto.png",
-            "name" : "Simon Adams",
-            "designation" : "CTO"
+            "price": "$39",
+            "dataContent" : "Multi Design",
+            "title": "Website Page ",
+            "describe": "When you’re ready to go beyond prototyping in Figma, Webflow’s ready to help.",
+            "list": [
+                "All limited links",
+                "Own analytics platform",
+                "Chat support",
+                "Optimize hashtags",
+                "Unlimited users"
+            ]
         },
         {
-            "img" : "design-lead.png",
-            "name" : "Paul Jones",
-            "designation" : "Design Lead"
-        },
-        {
-            "img" : "project-manager.png",
-            "name" : "Sara Hardin",
-            "designation" : "Project Manager"
+            "price": "$499 +",
+            "dataContent" : "Per Design",
+            "title": "Complex Project",
+            "describe": "When you’re ready to go beyond prototyping in Figma, ",
+            "list": [
+                "All limited links",
+                "Own analytics platform",
+                "Chat support",
+                "Optimize hashtags",
+                "Unlimited users",
+                "Assist and Help"
+            ]
         }
     ]
 }

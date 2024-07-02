@@ -1,0 +1,55 @@
+//- features.pug
+extends layout.pug
+
+//- Inclure le fichier mixin
+include ../includes/mixins.pug
+
+block title 
+ title Finsweet-Features
+
+block content 
+  block hero_section
+    section(class="bg-tint-blue")
+      div(class="container flex justify-between") 
+        div(class="max-w-[485px]") 
+          h1(class="text-white mb-[24px]") All the features you need
+          p(class="text-grey mb-[48px]") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+          ul(class="flex space-x-[40px]") 
+            li
+              a(href="#" , class="btn") View Pricing
+        img(src="./assets/images/feature.svg", alt="feature" , class="hero-section__img") 
+  block list-images
+   ul(class="container flex justify-center flex-wrap gap-9 mt-[70px] ") 
+    li 
+     img(src="./assets/images/logo-6.png")
+    li 
+     img(src="./assets/images/logo-1.png", alt="")      
+    li 
+     img(src="./assets/images/logo-2.png", alt="") 
+    li 
+     img(src="./assets/images/logo-3.png", alt="")
+    li 
+     img(src="./assets/images/logo-4.png", alt="")  
+    li 
+     img(src="./assets/images/logo-5.png", alt="") 
+  section
+   block cards 
+    div(class='container')
+     h2(class="text-center max-w-[630px] mx-auto") The benefits of working with us
+     ul(class="features-list")
+      each item in benefits 
+       li(class="features-list_item bg-grey")
+        img(src=`./assets/images/${item.icon}`, alt=item.alt )
+        h3=item.title 
+        p=item.describe    
+  block section-modulable
+    +sectionModulable('pt-0', false, [features_groupes[0].client], 'Use Client-first')
+
+  block section-modulable
+    +sectionModulable(' bg-grey ', true, [features_groupes[0].free_revision], 'Free Revision Rounds')
+
+  block section-modulable
+    +sectionModulable('', false, [features_groupes[0].priority_support], '24/7 Support')
+
+  block section-modulable
+    +sectionModulable('bg-yellow bg-opacity-10 ', true, [features_groupes[0].quick_delivery] , 'Quick Delivery')

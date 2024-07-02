@@ -11,6 +11,9 @@ node_modules/
 ### Package lock ###
 package-lock.json
 
+# Ignore layout.pug file
+src/pages/layout.pug
+
 ## docs ## 
 docs/
 

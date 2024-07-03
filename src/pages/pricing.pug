@@ -6,9 +6,10 @@ block title
 
 block content
  section(class='container')
-  div(class='mx-auto max-w-[563px] text-center')
-   h1(class='mb-[16px]') Our Pricing Plans
-   p When you’re ready to go beyond prototyping in Figma, Webflow is ready to help you bring your designs to life — without coding them. 
+  block section__contenu
+   div(class='mx-auto max-w-[563px] text-center')
+    h1(class='mb-[16px]') Our Pricing Plans
+    p When you’re ready to go beyond prototyping in Figma, Webflow is ready to help you bring your designs to life — without coding them. 
   div(class='cards_plan flex items-start justify-between mt-[64px] gap-5')
    each item in pricing 
     article(class='w-1/2')

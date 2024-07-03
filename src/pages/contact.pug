@@ -1,0 +1,34 @@
+//- contact.pug
+
+extends layout.pug
+
+block title
+ title Finsweet-Contact Us 
+
+block content 
+ section(class='container')
+  block section__contenu
+   div(class='mx-auto max-w-[563px] text-center')
+    h1(class='mb-[16px]') Contact Us
+    p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.  
+   form(action="" , class='form_container')
+     ul(class='flex flex-wrap gap-3 mb-8')
+      li(class='form_list-item')
+       label(for="name" , class='form_label') Name
+       input(type="text", name="name", class="form_input" ,placeholder="Enter your name", required)
+      li(class='form_list-item')
+       label(for="email" , class='form_label') Email
+       input(type="email", name="email", class='form_input' , placeholder="Enter your email", required)
+      li(class='form_list-item')
+       label(for="subject" , class='form_label') Subject
+       input(type="text", name="subject", class='form_input' , placeholder="Provide context", required)
+      li(class='form_list-item')
+       label(for="subject" , class='form_label') Sujet
+       select(name="subject" , class='form_input', required)          option(value="" disabled selected) Choisissez un sujet
+        option(value="demande") Demande de renseignements
+        option(value="support") Support technique
+        option(value="feedback") Retour d'information
+      li(class='form_list-item')
+       label(for="message" , class='form_label') Message
+       textarea(name="message", class='form_input h-[100px] resize-none' ,required,  placeholder="Write your  question here")
+     button(class='btn') Send Messege  

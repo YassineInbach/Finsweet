@@ -62,8 +62,7 @@
    .btn {
       color: theme('colors.dark-blue');
       background-color: theme('colors.yellow');
-      padding: 16px 48px;
-      border-radius: 30px;
+      @apply text-xs py-[16px] px-[48px] rounded-[30px];
    }
 
    /* Styles pour les conteneurs */
@@ -243,7 +242,7 @@ button{
      }
  
      ul {
-       margin-top: 54px;
+       margin-top: 47px;
      }
    }
  
@@ -252,6 +251,33 @@ button{
      ul {
        @apply mt-[39px];
      }
+   }
+ }
+
+ /* Styles form_container */
+ .form_container{
+   @apply mt-[64px] p-[55px] max-w-[1000px] mx-auto bg-grey rounded-3xl;
+   ul{
+      &>:last-child{
+         @apply flex-auto;
+      }
+      .form_list-item{
+         @apply grid gap-y-2;
+         flex:1 1 300px;
+         .form_label{
+            &::after{
+               content: "*";
+               @apply text-sm text-tint-blue align-middle ml-2;
+            }
+            @apply text-xs  text-dark-blue font-medium;
+         }
+         .form_input{
+            @apply py-[16px] px-3 rounded-md border border-tint-blue;
+         }
+      }
+   }
+   .btn{
+      @apply text-grey bg-tint-blue ; 
    }
  }
 } 

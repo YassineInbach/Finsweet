@@ -242,7 +242,7 @@ button{
      }
  
      ul {
-       margin-top: 47px;
+       margin-top: 54px;
      }
    }
  
@@ -280,4 +280,23 @@ button{
       @apply text-grey bg-tint-blue ; 
    }
  }
+
+ /*Styles accordion_detail & suammry_after*/
+  .accordion_details{
+   @apply mb-[26px] pb-1;
+   border-bottom: 2px solid #ECECF1 ;
+   &:first-child{
+      summary > div {
+         h3{
+           @apply ml-[5px];
+         }
+      }
+   }
+   &:last-child{
+      @apply border-none;
+   }
+   .summary_after::after{
+      content: url("../images/plus.png");
+    }
+  }
 } 

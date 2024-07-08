@@ -21,6 +21,10 @@ module.exports = {
       '3xl' : '48px',
       '4xl' : '54px'
     },
+    backgroundImage : {
+      'custom-bg' : "url('../images/custom-bg.png')",
+      'opacity-bg' : "url('../images/bg-opacity.png')"
+    },
     extend: {},
   },
   plugins: [],

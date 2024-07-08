@@ -61,7 +61,7 @@ block content
       a(href="" , class='text-royal-blue') Contact us for more info
      div(class='w-[50%]')
       each item in info_accordion 
-       details(class='accordion_details')
+       details(class='accordion_details' , open=item.type)
         summary(class="summary_after flex justify-between space-x-2 mb-3") 
          div(class="flex gap-x-7")
           h4(class='text-base text-royal-blue font-medium')=item.num

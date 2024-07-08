@@ -44,7 +44,8 @@ gulp.task("CopyPug", async function () {
               benefits : jsonData.benefits,
               team : jsonData.team,
               features_groupes : jsonData.features_groupes,
-              pricing :jsonData.pricing
+              pricing : jsonData.pricing,
+              info_accordion : jsonData.info_accordion
             
             }
             })

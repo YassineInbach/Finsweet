@@ -71,9 +71,10 @@ block content
         h3=item.title 
         p=item.describe
   section(class='container flex items-start justify-between relative space-x-1')
-   div(class='max-w-[409px]')
-    h2(class='mb-[16px]') What our clients say about us
-    p Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
+   block section_title 
+    div(class='max-w-[409px]')
+     h2(class='mb-[16px]') What our clients say about us
+     p Lorem ipsum dolor sit amet, consectetur adipiscing elit sed.
    ul(class='single-item  max-w-[650px] ')
     each item in about
      li 
@@ -89,4 +90,18 @@ block content
      img(src="./assets/images/icon-prev.png", alt="icon-prev")
     button(type="button" class="slick-next") 
      img(src="./assets/images/icon-next.png", alt="icon-next")         
-   
+  block accordion_section
+   section(class='container flex items-start justify-between')
+    block section_title 
+     div(class='max-w-[409px]')
+      h2(class='mb-[16px]') Frequently asked questions
+      a(href="" , class='text-royal-blue') Contact us for more info
+     div(class='w-[50%]')
+      each item in info_accordion 
+       details(class='accordion_details')
+        summary(class="summary_after flex justify-between space-x-2 mb-3") 
+         div(class="flex gap-x-7")
+          h4(class='text-base text-royal-blue font-medium')=item.num
+          h3(class='font-medium')=item.title
+        p(class='mx-auto max-w-[540px] mb-[20px]')=item.describe
+     

@@ -7,6 +7,7 @@ const sass = require("gulp-sass")(require("sass"));
 const jsonData = require("./src/data.json");
 const uglify = require("gulp-uglify");
 const babel = require("gulp-babel");
+const concat = require("gulp-concat");
 const browserSync = require("browser-sync").create();
 
 
@@ -82,6 +83,7 @@ gulp.task("Scss", function () {
 gulp.task("Js", function () {
     return gulp
       .src("src/assets/js/*.js") // Chemin des fichiers JavaScript source
+      .pipe(concat('script.js'))
       .pipe(babel({ presets: ["@babel/env"] }))
       .pipe(uglify()) // Minifier le fichier JavaScript
       .pipe(gulp.dest("docs/assets/js")) // Répertoire de destination pour le fichier minifié

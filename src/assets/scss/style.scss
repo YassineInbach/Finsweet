@@ -298,5 +298,8 @@ button{
    .summary_after::after{
       content: url("../images/plus.png");
     }
+   .summary_after.open::after{
+      content: url("../images/close.png");
+   }
   }
 } 

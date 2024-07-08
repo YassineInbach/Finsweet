@@ -256,5 +256,32 @@
                 "Assist and Help"
             ]
         }
+    ],
+    "info_accordion" : [
+        {
+            "num" : "01",
+            "title" : "How much time does it take?",
+            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "num" : "02",
+            "title" : "What is your class naming convention?",
+            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "num" : "03",
+            "title" : "How do you communicate?",
+            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "num" : "04",
+            "title" : "I have a bigger project. Can you handle it?",
+            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        },
+        {
+            "num" : "05",
+            "title" : "I have a bigger project. Can you handle it?",
+            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+        }
     ]
 }

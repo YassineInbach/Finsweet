@@ -261,7 +261,8 @@
         {
             "num" : "01",
             "title" : "How much time does it take?",
-            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+            "type" : "open"
         },
         {
             "num" : "02",

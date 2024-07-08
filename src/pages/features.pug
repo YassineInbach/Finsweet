@@ -53,3 +53,17 @@ block content
 
   block section-modulable
     +sectionModulable('bg-yellow bg-opacity-10 ', true, [features_groupes[0].quick_delivery] , 'Quick Delivery')
+  block accordion_section
+   section(class='container flex items-start justify-between')
+    block section_title 
+     div(class='max-w-[409px]')
+      h2(class='mb-[16px]') Frequently asked questions
+      a(href="" , class='text-royal-blue') Contact us for more info
+     div(class='w-[50%]')
+      each item in info_accordion 
+       details(class='accordion_details')
+        summary(class="summary_after flex justify-between space-x-2 mb-3") 
+         div(class="flex gap-x-7")
+          h4(class='text-base text-royal-blue font-medium')=item.num
+          h3(class='font-medium')=item.title
+        p(class='mx-auto max-w-[540px] mb-[20px]')=item.describe  

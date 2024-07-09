@@ -15,8 +15,8 @@ block content
             li
               a(href="#" , class="btn") View our work
             li 
-              a(href="#" , class="text-yellow") View Pricing 
-                i(class="fa-solid fa-arrow-right text-yellow ml-2")
+              a(href="#" , class="text-grey") View Pricing 
+                img(src="./assets/images/arrow-right-white.png" , alt="arrow-right" , class='ml-[12px]')
         img(src="./assets/images/illustration.svg", alt="illustration" , class="hero-section__img") 
   section(class='bg-grey')
     div(class='container flex items-start justify-between')
@@ -24,7 +24,7 @@ block content
         h2(class="mb-[16px]") How we work
         p(class="mb-[16px]") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
         a(href="#" , class="text-royal-blue") Get in touch with us
-          i(class="fa-solid fa-arrow-right text-royal-blue ml-2")
+          img(src="./assets/images/arrow-right-blue.png" , alt="arrow-right" , class='ml-[12px]')
       ul(class='grid grid-cols-2 gap-[48px]')
         each item in works
           li(class='max-w-[300px]')
@@ -35,7 +35,7 @@ block content
     div(class='flex justify-between')
       h2 View our projects
       a(href="#") View More
-        i(class="fa-solid fa-arrow-right text-dark-blue ml-2")
+        img(src="./assets/images/arrow-right-black.png" , alt="arrow-right" , class='ml-[12px]')
     ul(class='grid grid-cols-[70%_30%] gap-x-[10px] mt-[64px]') 
      each project, index in projects
       if index === 0
@@ -47,7 +47,7 @@ block content
               p(class='text-grey mb-[25px]')= project.description
               a(href=project.href , class='text-yellow') 
                 | View projet 
-                i(class="fa-solid fa-arrow-right text-yellow ml-2")
+                img(src="./assets/images/arrow-right-yellow.png" , alt="arrow-right" , class='ml-[12px]')
       else if index === 1
         li(class='relative col-span-1')
           img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-full h-[83%] bg-grey')
@@ -56,7 +56,7 @@ block content
               h3(class='text-sm text-white mb-[16px]')= project.title
               a(href=project.href , class='text-yellow') 
                 | View projet 
-                i(class="fa-solid fa-arrow-right text-yellow ml-2")
+                img(src="./assets/images/arrow-right-yellow.png" , alt="arrow-right" , class='ml-[12px]')
       else if index === 2
         li(class='col-span-1')
           img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-full h-[83%]')
@@ -113,10 +113,10 @@ block content
     h3(class='text-white text-lg font-medium') Send inquiry
     p(class='text-grey mt-[16px]') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
     form(action="", class="grid gap-y-3 my-[40px]")
-     input(type="text", placeholder="Your Name", class="py-[14px] px-4 rounded-lg border border-grey" required)
-     input(type="email", placeholder="Email", class="py-[14px] px-4 rounded-lg border border-grey" required)
-     input(type="text", placeholder="Paste your Figma design URL", class="py-[14px] px-4 rounded-lg border border-grey" required)
-     button(class='btn font-medium mt-4') Send an Inquiry
-    a(href="#" class='flex justify-center text-white') Get in touch with us
-     i(class="fa-solid fa-arrow-right ml-3")
+     input(type="text", placeholder="Your Name", class="py-[14px] px-4 border border-grey" required)
+     input(type="email", placeholder="Email", class="py-[14px] px-4 border border-grey" required)
+     input(type="text", placeholder="Paste your Figma design URL", class="py-[14px] px-4 border border-grey" required)
+     button(class='btn font-medium mt-4 rounded-none') Send an Inquiry
+    a(href="#" class='flex justify-center text-grey') Get in touch with us
+     img(src="./assets/images/arrow-right-white.png" , alt="arrow-right" , class='ml-[12px]')
   section     

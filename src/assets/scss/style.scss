@@ -302,4 +302,12 @@ button{
       content: url("../images/close.png");
    }
   }
+
+  /*Styles icons*/
+  .list_icons{
+   @apply flex justify-center gap-x-6 mt-[32px];
+   li > a >  i{
+      @apply text-base;
+   }
+  }
 } 

@@ -48,7 +48,7 @@ gulp.task("CopyPug", async function () {
               pricing : jsonData.pricing,
               info_accordion : jsonData.info_accordion,
               our_blog : jsonData.our_blog.home.blog
-            }
+                        }
             })
             )
         .pipe(prettier())
@@ -82,7 +82,7 @@ gulp.task("Scss", function () {
 // CopyJs
 gulp.task("Js", function () {
     return gulp
-      .src("src/assets/js/*.js") // Chemin des fichiers JavaScript source
+      .src('src/assets/js/*.js') // Chemin des fichiers JavaScript source
       .pipe(concat('script.js'))
       .pipe(babel({ presets: ["@babel/env"] }))
       .pipe(uglify()) // Minifier le fichier JavaScript

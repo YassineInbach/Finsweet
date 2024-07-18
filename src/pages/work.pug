@@ -5,9 +5,9 @@ block title
  title Finsweet-work
 
 block content 
- section
+ section(class='bg-grey')
   block section__contenu
-   div(class='mx-auto max-w-[733px] text-center')
+   div(class='mx-auto max-w-[733px] text-center px-3')
     span What we created
     h1(class='mb-[16px]') Our Work Portfolio
     p We help teams create great digital products by providing them with tools and technology to make the design-to-code process universally accessible.
@@ -24,3 +24,15 @@ block content
      li
       a(href="https://www.linkedin.com/company/linkd-pro" target="_blank") 
        i(class="fa-brands fa-linkedin") 
+ section(class='container')
+  ul(class='flex justify-center gap-x-11')
+   li 
+    a(href="#" , class="menu_active menu_works" , data-menu="1" ) All
+   li 
+    a(href="#" , class="menu_works" , data-menu="2" ) UI Design
+   li 
+    a(href="#" , class="menu_works" , data-menu="3" ) Webflow Design
+   li 
+    a(href="#" , class="menu_works" , data-menu="4" ) Figma Design      
+  div(id="gallerie_works" , class="style-gallerie_works")
+    

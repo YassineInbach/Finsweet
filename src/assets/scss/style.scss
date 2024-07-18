@@ -310,4 +310,18 @@ button{
       @apply text-base;
    }
   }
+
+  .menu_active{
+   @apply text-sm font-semibold relative text-royal-blue;
+   &:after{
+      content:"";
+      @apply absolute left-0 w-[100%] bottom-0 h-[2px] bg-royal-blue;
+   }
+  }
+  
+  /*style-gallerie_works*/
+  .style-gallerie_works{
+   @apply grid mt-[48px] gap-[30px] ;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 } 

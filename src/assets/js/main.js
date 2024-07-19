@@ -6,36 +6,42 @@ const data = {
       title: "Template 1",
       description:
         "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+      link : "View Portfolio"  
     },
     {
       src: "set2.png",
       title: "Template 2",
       description:
         "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+      link : "View Portfolio"
     },
     {
       src: "set3.png",
       title: "Template 3",
       description:
         "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+      link : "Read case study"  
     },
     {
       src: "set4.png",
       title: "Template 4",
       description:
         "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        link : "Read case study"  
     },
     {
       src: "set5.png",
       title: "Template 5",
       description:
         "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        link : "Read case study"  
     },
     {
       src: "set6.png",
       title: "Template 6",
       description:
         "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        link : "Read case study"
     },
   ],
   2: [
@@ -44,18 +50,21 @@ const data = {
       title: "Template 4",
       description:
         "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        link : "View Portfolio"
     },
     {
       src: "set5.png",
       title: "Template 5",
       description:
         "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        link : "Read case study"
     },
     {
       src: "set6.png",
       title: "Template 6",
       description:
         "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        link : "Read case study"
     },
   ],
   3: [
@@ -64,6 +73,7 @@ const data = {
       title: "Template 1",
       description:
         "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        link : "View Portfolio"
     },
 
     {
@@ -71,6 +81,14 @@ const data = {
       title: "Template 3",
       description:
         "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        link : "Read case study"
+    },
+    {
+      src: "set2.png",
+      title: "Template 2",
+      description:
+        "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+        link : "View Portfolio"
     },
   ],
 };
@@ -89,7 +107,7 @@ function updateMenu(value) {
           <h3 class="mt-[16px] mb-[8px]">${item.title}</h3>
           <p class="mb-[16px]">${item.description}</p>
           <a href="#" class="font-medium">
-          View Portfolio
+          ${item.link}
           <img src="./assets/images/arrow-right-black.png" alt="arrow-right" class="ml-[12px] align-middle">
           </a>
         </article>

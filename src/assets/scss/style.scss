@@ -321,7 +321,7 @@ button{
   
   /*style-gallerie_works*/
   .style-gallerie_works{
-   @apply grid mt-[48px] gap-[30px] ;
+   @apply grid mt-[48px] gap-x-[30px] gap-y-[45px] ;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 } 

@@ -83,8 +83,8 @@ gulp.task("Scss", function () {
 gulp.task("Js", function () {
     return gulp
       .src('src/assets/js/*.js') // Chemin des fichiers JavaScript source
-      .pipe(concat('script.js'))
-      .pipe(babel({ presets: ["@babel/env"] }))
+    //   .pipe(concat('script.js'))
+    //   .pipe(babel({ presets: ["@babel/env"] }))
       .pipe(uglify()) // Minifier le fichier JavaScript
       .pipe(gulp.dest("docs/assets/js")) // Répertoire de destination pour le fichier minifié
       .pipe(browserSync.stream());

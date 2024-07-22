@@ -96,6 +96,10 @@ const data = {
 var detailsElements = document.querySelectorAll(".accordion_details");
 var menuWorks = document.querySelectorAll(".menu_works");
 var gallerieWorks = document.getElementById("gallerie_works");
+var readMore = document.querySelector('.btn-read-more');
+var moreText = document.getElementById('more-text');
+
+let open = false;
 
 function updateMenu(value) {
   if (data[value]) {
@@ -141,7 +145,6 @@ detailsElements.forEach((detail) => {
         }
       });
     }
-
     updateIcons();
   });
 });
@@ -158,3 +161,18 @@ function updateIcons() {
 }
 
 updateIcons(); // Initial call to set the correct icons on page load
+
+readMore.addEventListener('click', () => {
+  console.log("read more");
+  if (open) {
+    moreText.style.display="none";
+    console.log("remove text")
+    readMore.innerHTML = 'Lire la suite <img src="./assets/images/chevron-up.svg">';
+  } else {
+    moreText.style.display="block";
+    console.log("show text")
+    readMore.innerHTML = 'Lire moins <img src="./assets/images/chevron-down.svg">';
+  }
+  open = !open; // Toggle the state
+});
+moreText.style.display = "none";

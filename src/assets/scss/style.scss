@@ -323,5 +323,25 @@ button{
   .style-gallerie_works{
    @apply grid mt-[48px] gap-x-[30px] gap-y-[45px] ;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  } 
+
+  /*styles footer*/
+  footer{
+   h2{
+      @apply text-white;
+   }
+   h3{
+      @apply text-sm font-medium mb-1;
+   }
+   p{
+      @apply text-accent font-light;
+   }
+   .list_icons{
+      @apply justify-start;
+      & > li > a{
+         @apply text-white;
+      }
+   }
+    
   }
 } 

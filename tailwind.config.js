@@ -25,7 +25,11 @@ module.exports = {
       'custom-bg' : "url('../images/custom-bg.png')",
       'opacity-bg' : "url('../images/bg-opacity.png')"
     },
-    extend: {},
+    extend: {
+      flex : {
+        "1" : ' 1 1 250px',
+      }
+    },
   },
   plugins: [],
   corePlugins: {

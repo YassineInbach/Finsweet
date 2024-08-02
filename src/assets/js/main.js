@@ -92,7 +92,7 @@ const data = {
     },
   ],
 };
-
+var menuItems = document.querySelectorAll('#menu ul > li > a');
 var detailsElements = document.querySelectorAll(".accordion_details");
 var menuWorks = document.querySelectorAll(".menu_works");
 var gallerieWorks = document.getElementById("gallerie_works");
@@ -100,6 +100,26 @@ var readMore = document.querySelector('.btn-read-more');
 var moreText = document.getElementById('more-text');
 
 let open = false;
+
+  // Fonction pour mettre à jour les liens actifs en fonction de l'URL actuelle
+  function setActiveLink() {
+      var currentUrl = window.location.pathname.split("/").slice(-1)[0];
+      var locationUrl = window.location.href;
+      console.log('locationUrl' , locationUrl.split("/").slice(-1)[0]);
+      console.log('cuurentUrl' , currentUrl);
+      menuItems.forEach(function(link) {
+          var linkUrl = link.getAttribute('href').split("/").slice(-1)[0];
+          // Comparer l'URL actuelle avec l'attribut href du lien
+          if (linkUrl === currentUrl) {
+              link.classList.add('active');
+          } else {
+              link.classList.remove('active');
+          }
+      });
+  }
+
+  // // Initialiser les liens actifs
+  setActiveLink();
 
 function updateMenu(value) {
   if (data[value]) {
@@ -112,7 +132,7 @@ function updateMenu(value) {
           <p class="mb-[16px]">${item.description}</p>
           <a href="#" class="font-medium">
           ${item.link}
-          <img src="./assets/images/arrow-right-black.png" alt="arrow-right" class="ml-[12px] align-middle">
+          <img src="./assets/images/arrow-right-black.png" alt="arrow-right" class="ml-[12px] align-middle" loading="lazy">
           </a>
         </article>
       `;
@@ -176,3 +196,5 @@ readMore.addEventListener('click', () => {
   open = !open; // Toggle the state
 });
 moreText.style.display = "none";
+
+

@@ -1,20 +1,20 @@
 div(class='container flex justify-between')
  block logo
   a(href="./index.html" , class=('text-base text-white'))
-   img(src="./assets/images/logo.png", alt="logo-finsweet" , class=('align-sub mr-[5px]'))
+   img(src="./assets/images/logo.png", alt="logo-finsweet" , class=('align-sub mr-[5px]') , loading="lazy")
    |Finsweet  
- nav(class='flex space-x-[48px]')
+ nav(id="menu" , class='flex space-x-[48px]')
   ul(class='flex space-x-[32px]') 
    li
-    a(href="./index.html" , class='active') Home
+    a(href="./index.html" , class='link active') Home
    li 
-    a(href="./about.html" , class='link text-grey') About us
+    a(href="./about.html" , class='link') About us
    li 
-    a(href="./features.html" , class='link text-grey') Features
+    a(href="./features.html" , class='link') Features
    li 
-    a(href="./pricing.html" , class='link text-grey') Pricing
+    a(href="./pricing.html" , class='link') Pricing
    li 
-    a(href="./faq.html" , class='link text-grey') Faq
+    a(href="./faq.html" , class='link') Faq
    li  
-    a(href="./blog.html" , class='link text-grey') Blog
-  a(href="./contact.html" , class=('btn')) Contact us   
+    a(href="./blog.html" , class='link') Blog
+  a(href="./contact.html" , class='btn') Contact us   

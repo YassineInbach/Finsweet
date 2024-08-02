@@ -17,3 +17,5 @@ src/pages/layout.pug
 ## docs ## 
 docs/
 
+# Seo
+docs/seo/*

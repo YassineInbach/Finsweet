@@ -20,39 +20,22 @@
   /* Classe utilitaire pour les styles communs */
 .common-after {
    content: "";
-   position: absolute;
-   background-color: theme("colors.yellow");
-   bottom: -12px;
-   height: 6px;
-   width: 6px;
-   left: 50%;
+   @apply absolute bg-yellow bottom-[-12px] h-[6px] w-[6px] left-[50%];
    transform: translate(-50%, 0) rotate(45deg);
  }
  
  /* Styles pour les liens */
  .link {
-   position: relative;
- 
-   &::after {
-     @extend .common-after;
-     opacity: 0;
-     transition: opacity 0.5s ease;
-   }
- 
-   &:hover::after {
-     opacity: 1;
-   }
- 
-   &:hover {
-     color: theme('colors.yellow');
-     transition: color 0.5s linear;
+   @apply text-grey transition-opacity duration-500 ease-in-out;
+   &:hover{
+      @apply text-yellow;
    }
  }
  
  /* Styles pour les éléments actifs */
  .active {
-   @apply relative text-yellow;
- 
+   @apply relative;
+   color: theme('colors.yellow') !important;
    &::after {
      @extend .common-after;
    }
@@ -60,16 +43,16 @@
 
    /* Styles pour les boutons */
    .btn {
-      color: theme('colors.dark-blue');
-      background-color: theme('colors.yellow');
-      @apply text-xs py-[16px] px-[48px] rounded-[30px];
+      @apply text-xs text-dark-blue bg-yellow rounded-[30px];
+      padding-left: clamp(24px , 5.5vw , 48px);
+      padding-right: clamp(24px , 5.5vw , 48px);
+      padding-top: clamp(8px , 1.83vw , 16px);
+      padding-bottom: clamp(8px , 1.83vw , 16px);
    }
 
    /* Styles pour les conteneurs */
    .container {
-      max-width: 1280px;
-      width: 100%;
-      margin: 0 auto;
+      @apply max-w-[1280px] w-full mx-auto;
 
       /* Media-query pour les écrans de largeur inférieure à 1290px */
       @media screen and (max-width: 1290px) {
@@ -95,9 +78,8 @@
 
    /* Styles title_before */
    .title_before::before{
-     @apply block  text-xs;
+     @apply block text-xs leading-[35px];
      content: attr(data-content);
-     line-height: 35px;
     }
 
     /*Styles cards features*/
@@ -122,22 +104,20 @@
 
 /*Styles button Prev / Next */
 .btn-click{
-   position: absolute;
-   right: 8px;
-   top: 59%;
+   @apply absolute right-[8px] top-[59%];
 }
 /* ALL button slick / Prev / Next */ 
 button{
-   padding: 8px 14px;
+   @apply px-[14px] py-[8px];
    border: 0;
    &.slick-prev{
-      margin-right: 16px;
+      @apply mr-[16px];
    }
    &.slick-next{
-      background-color: theme('colors.royal-blue');
+      @apply bg-royal-blue;
    }
    img{
-      width: 10px;
+      @apply w-[10px];
    }
 }
 
@@ -146,7 +126,7 @@ button{
    @apply max-w-[624px];
    
    h2{
-      @apply text-xl;
+      @apply text-2xl;
    }
 
    p{
@@ -182,8 +162,7 @@ button{
      @apply px-[48px] py-[64px] rounded-lg;
      h2{
       &::after{
-         @apply text-xs font-normal ml-3 align-top;
-         color:theme('colors.royal-blue');
+         @apply text-royal-blue text-xs font-normal ml-3 align-top;
          content: attr(data-content);
       }
      }
@@ -208,12 +187,12 @@ button{
    /* First and Last articles */
    & > :first-child,
    & > :last-child {
-     background-color: theme('colors.grey');
+      @apply bg-grey;
  
      .btn {
-       background-color: theme('colors.dark-blue');
+      @apply bg-dark-blue;
        a{
-         color: theme('colors.grey');
+         @apply text-grey;
        }
      }
    }
@@ -230,7 +209,7 @@ button{
      @apply bg-[#1C1E53];
      h2{
       &::after{
-         color:theme('colors.yellow');
+         @apply text-yellow;
       }
      }
  
@@ -242,7 +221,7 @@ button{
      }
  
      ul {
-       margin-top: 54px;
+      @apply mt-[54px];
      }
    }
  
@@ -345,3 +324,20 @@ button{
     
   }
 } 
+
+@layer utilities{
+   .text-base{
+      font-size: clamp(20px ,  2.59vw, theme('fontSize.base'));
+   }
+   .text-2xl{
+      font-size: clamp(19px , 4vw , theme('fontSize.2xl'));
+   }
+   .py-clamp{
+      --padding-clamp: clamp(43px, 3.7vw, 86px);
+      padding-left: var(--padding-clamp);
+      padding-right: var(--padding-clamp);
+   }
+   .pt-clamp{
+      padding-top: clamp(48px, 8.7vw, 96px);
+   }
+}

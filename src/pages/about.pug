@@ -19,14 +19,14 @@ block content
       div(class="max-w-[515px]") 
         h2(class="text-2xl") Continuous improvement
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
-    img(src="./assets/images/focussed-image.png", alt="image-focussed" , class='w-full')  
+    img(src="./assets/images/focussed-image.png", alt="image-focussed" , class='w-full' , loading="lazy")  
     
   section(class='container') 
     h2(class="text-center") The process we follow
     ul(class="flex justify-center flex-wrap gap-x-5 gap-y-10 mt-[48px]") 
       each item in process 
         li(class="max-w-[270px]") 
-          img(src= `./assets/images/${item.src}`, alt="line-icon" , class="mb-[20px] w-full") 
+          img(src= `./assets/images/${item.src}`, alt="line-icon" , class="mb-[20px] w-full" , loading="lazy") 
           h3(class="mb-3")= item.title 
           p= item.describe
           
@@ -44,24 +44,24 @@ block content
         ul(class="features-list")
           each item in benefits 
             li(class="features-list_item bg-grey")
-              img(src=`./assets/images/${item.icon}`, alt=item.alt )
+              img(src=`./assets/images/${item.icon}`, alt=item.alt , loading="lazy")
               h3= item.title 
               p= item.describe    
               
     block list-images
      ul(class="container flex justify-center flex-wrap gap-9 mt-[70px]") 
       li 
-        img(src="./assets/images/logo-6.png")
+        img(src="./assets/images/logo-6.png" , loading="lazy")
       li 
-        img(src="./assets/images/logo-1.png", alt="")      
+        img(src="./assets/images/logo-1.png", loading="lazy")      
       li 
-        img(src="./assets/images/logo-2.png", alt="") 
+        img(src="./assets/images/logo-2.png", loading="lazy") 
       li 
-        img(src="./assets/images/logo-3.png", alt="")
+        img(src="./assets/images/logo-3.png", loading="lazy")
       li 
-        img(src="./assets/images/logo-4.png", alt="")  
+        img(src="./assets/images/logo-4.png", loading="lazy")  
       li 
-        img(src="./assets/images/logo-5.png", alt="") 
+        img(src="./assets/images/logo-5.png", loading="lazy") 
         
   section(class='bg-grey') 
     div(class='container')
@@ -69,11 +69,11 @@ block content
       ul(class="multiple-items flex justify-center mt-[48px] space-x-5") 
         each item in team
           li
-            img(src=`assets/images/${item.img}`)
+            img(src=`assets/images/${item.img}` , loading="lazy")
             h3= item.name 
             h4= item.designation
       div(class='flex justify-center mx-auto mt-[40px]') 
         button(type="button" , class="slick-prev bg-white")
-          img(src="./assets/images/icon-prev.png", alt="icon-prev")
+          img(src="./assets/images/icon-prev.png", alt="icon-prev" , loading="lazy")
         button(type="button" , class="slick-next") 
-          img(src="./assets/images/icon-next.png", alt="icon-next")
+          img(src="./assets/images/icon-next.png", alt="icon-next" , loading="lazy")

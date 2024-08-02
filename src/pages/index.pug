@@ -17,7 +17,7 @@ block content
             li 
               a(href="./pricing.html" , class="text-grey") View Pricing 
                 img(src="./assets/images/arrow-right-white.png" , alt="arrow-right" , class='ml-[12px]')
-        img(src="./assets/images/illustration.svg", alt="illustration" , class="hero-section__img") 
+        img(src="./assets/images/illustration.svg", alt="illustration" , class="hero-section__img" , loading="lazy") 
   section(class='bg-grey')
     div(class='container flex items-start justify-between')
       div(class="max-w-[400px]") 
@@ -28,19 +28,19 @@ block content
       ul(class='grid grid-cols-2 gap-[48px]')
         each item in works
           li(class='max-w-[300px]')
-            img(src=`./assets/images/${item.img}`, alt="" )  
+            img(src=`./assets/images/${item.img}`, loading="lazy")  
             h3(class='my-[8px]')=item.title 
             p=item.describe 
   section(class='container pb-[80px]') 
     div(class='flex justify-between')
       h2 View our projects
-      a(href="#") View More
+      a(href="./work.html") View More
         img(src="./assets/images/arrow-right-black.png" , alt="arrow-right" , class='ml-[12px]')
     ul(class='grid grid-cols-[70%_30%] gap-x-[10px] mt-[64px]') 
      each project, index in projects
       if index === 0
         li(class='relative row-span-2')
-          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-[97%] h-[91.5%]')
+          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-[97%] h-[91.5%]' , loading="lazy")
           div(class='absolute top-0 bg-tint-blue bg-opacity-85 h-[91.5%] w-[48%]') 
             div(class='absolute bottom-[40px] px-[30px]') 
               h3(class='text-sm text-white mb-[16px]')= project.title
@@ -50,7 +50,7 @@ block content
                 img(src="./assets/images/arrow-right-yellow.png" , alt="arrow-right" , class='ml-[12px]')
       else if index === 1
         li(class='relative col-span-1')
-          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-full h-[83%] bg-grey')
+          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-full h-[83%] bg-grey' , loading="lazy")
           div(class='absolute top-0 bg-tint-blue bg-opacity-75 h-[90%] w-full') 
             div(class='absolute bottom-[20px] px-[30px]')
               h3(class='text-sm text-white mb-[16px]')= project.title
@@ -59,7 +59,7 @@ block content
                 img(src="./assets/images/arrow-right-yellow.png" , alt="arrow-right" , class='ml-[12px]')
       else if index === 2
         li(class='col-span-1')
-          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-full h-[83%]')
+          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-full h-[83%]' , loading="lazy")
   section(class='bg-grey')
    block cards 
     div(class='container')
@@ -67,7 +67,7 @@ block content
      ul(class="features-list")
       each item in features 
        li(class="features-list_item bg-white")
-        img(src=`./assets/images/${item.icon}`, alt=item.alt )
+        img(src=`./assets/images/${item.icon}`, alt=item.alt , loading="lazy" )
         h3=item.title 
         p=item.describe
   section(class='container flex items-start justify-between relative space-x-1')
@@ -81,15 +81,15 @@ block content
       article 
        p(class="text-base font-medium")=item.describe
        div(class="flex space-x-3 mt-[20px]")
-        img(src=`./assets/images/${item.img}`, alt=item.alt , class="w-[8%]")
+        img(src=`./assets/images/${item.img}`, alt=item.alt , class="w-[8%]" , loading="lazy")
         div 
          h3=item.name
          h4(class='text-xs font-light')=item.designation
    div(class="btn-click") 
     button(type="button" class="slick-prev bg-grey")
-     img(src="./assets/images/icon-prev.png", alt="icon-prev")
+     img(src="./assets/images/icon-prev.png", alt="icon-prev" , loading="lazy")
     button(type="button" class="slick-next") 
-     img(src="./assets/images/icon-next.png", alt="icon-next")         
+     img(src="./assets/images/icon-next.png", alt="icon-next" , loading="lazy")         
   block accordion_section
    section(class='container flex items-start justify-between')
     block section_title 
@@ -106,7 +106,7 @@ block content
         p(class='mx-auto max-w-[540px] mb-[20px]')=item.describe
   section(class='container flex bg-tint-blue p-0')
    div(class='bg-custom-bg bg-repeat-round min-h-[630px] max-w-[656px]')
-    div(class='bg-opacity-bg pt-[96px] px-[86px] min-h-[630px]') 
+    div(class='bg-opacity-bg py-clamp pt-clamp min-h-[630px]') 
      h2(class='text-white mb-[24px]') Building stellar websites for early startups
      p(class='text-white') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
    div(class='px-[50px] p-[50px] ') 
@@ -118,16 +118,17 @@ block content
      input(type="text", placeholder="Paste your Figma design URL", class="py-[14px] px-4 border border-grey" required)
      button(class='btn font-medium mt-4 rounded-none') Send an Inquiry
     a(href="./contact.html" class='flex justify-center text-grey') Get in touch with us
-     img(src="./assets/images/arrow-right-white.png" , alt="arrow-right" , class='ml-[12px]')
-  section(class="container")
-   h2 Our blog 
-   ul(class='flex justify-between gap-5 mt-[64px]')
-    each item in our_blog
-     li
-      img(src=`./assets/images/${item.img}`, alt="" , class="w-full")
-      article(class='mt-[40px]')
-       p(class="mb-3")=item.date 
-       h3(class="text-base font-medium mb-3")=item.title 
-       p(class="mb-5")=item.describe    
-       a(href="#" , class="font-medium") Read more
-        img(src="./assets/images/arrow-right-black.png" , alt="arrow-right" , class='ml-[12px] align-middle')
+     img(src="./assets/images/arrow-right-white.png" , alt="arrow-right" , class='ml-[12px]' , loading="lazy")
+  block blog
+   section(class="container")
+    h2 Our blog 
+    ul(class='flex justify-between flex-wrap gap-5 mt-[64px]')
+     each item in our_blog
+      li(class='flex-1')
+       img(src=`./assets/images/${item.img}`, alt="" , class="w-full" , loading="lazy")
+       article(class='mt-[40px]')
+        p(class="mb-3")=item.date 
+        h3(class="text-base font-medium mb-3")=item.title 
+        p(class="mb-5")=item.describe    
+        a(href="#" , class="font-medium") Read more
+         img(src="./assets/images/arrow-right-black.png" , alt="arrow-right" , class='ml-[12px] align-middle' , loading="lazy")

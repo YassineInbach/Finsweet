@@ -1,0 +1,3 @@
+@function clamp($Vmin , $Videal , $Vmax){
+    @return clamp(#{$min}, #{$ideal}, #{$max}); 
+}

@@ -6,12 +6,12 @@ block title
  title Finsweet-blog 
 
 block content 
- section 
+ section(class='pb-0') 
   block section__contenu
    div(class='mx-auto max-w-[978px] text-center px-3')
     h1(class='mb-[16px]') A UX Case Study on Creating a Studious Environment for Students
     p Andrew Jonson  Posted on 27th January 2021
-   img(src="./assets/images/environment-students.png", alt="img-environment-students" , class="container flex my-[48px]")
+   img(src="./assets/images/environment-students.png", alt="img-environment-students" , class="container flex my-[48px]" , loading="lazy")
    div(class="mx-auto max-w-[978px] px-[32px]") 
     block contenu
      p(class="text-center max-w-[831px]") Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle. By the same illusion which lifts the horizon of the sea to the level of the spectator on a hillside.
@@ -33,8 +33,21 @@ block content
       p(class='mb-[16px]') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
        span(class='text-royal-blue')  exercitation ullamco 
        | laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      img(src="./assets/images/img-blog.jpg", alt="img-blog" , class="w-full my-[32px]") 
+      img(src="./assets/images/img-blog.jpg", alt="img-blog" , class="w-full my-[32px]" , loading="lazy") 
       h2(class='text-2xl mb-[24px]') Ut enim ad minim veniam, quis nostrud.
-      p(class='mb-[16px]') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
+      p(class='mb-[80px]') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
        span(class='text-royal-blue')  exercitation ullamco 
        | laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+ block blog
+   section(class="container pt-0")
+    h2 Our blog 
+    ul(class='flex justify-between flex-wrap gap-5 mt-[64px]')
+     each item in our_blog
+      li(class='flex-1')
+       img(src=`./assets/images/${item.img}`, alt="" , class="w-full" , loading="lazy")
+       article(class='mt-[40px]')
+        p(class="mb-3")=item.date 
+        h3(class="text-base font-medium mb-3")=item.title 
+        p(class="mb-5")=item.describe    
+        a(href="#" , class="font-medium") Read more
+         img(src="./assets/images/arrow-right-black.png" , alt="arrow-right" , class='ml-[12px] align-middle' , loading="lazy")      

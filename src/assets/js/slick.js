@@ -1,5 +1,4 @@
 $(document).ready(function() {
-  
   // Initialize single-item slick slider
   function initializeSingleItemSlider() {
     $('.single-item').slick({

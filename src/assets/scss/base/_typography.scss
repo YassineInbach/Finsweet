@@ -1,29 +1,26 @@
 h1{
-    font-size: theme('fontSize.4xl');
-    line-height: 65px;
-    font-weight: 600;
+     @apply font-semibold;
+     font-size: clamp(27px ,4.2vw , theme('fontSize.4xl'));
+     line-height: clamp(32.5px , 5vw, 65px);
 }
 
 h2{
-    font-size: theme('fontSize.3xl');
-    line-height: 55px;
-    font-weight: 600;
-    color: theme('colors.dark-blue');
+    @apply text-dark-blue leading-[55px] font-semibold;
+    font-size: clamp(24px , 4.39vw , theme('fontSize.3xl'));
+    line-height: clamp(27.5px ,5vw  , 55px)
 }
 
 h3{
-    color: theme('colors.dark-blue');
+    @apply text-dark-blue;
 }
 a{
-    text-decoration: none;
-    font-weight: 500;
-    color: theme('colors.dark-blue');
+    @apply text-dark-blue no-underline font-medium;
 }
 
 p{
-    color: theme('colors.dark-blue');
+    @apply text-dark-blue;
 }
 
 li{
-    list-style: none;
+    @apply list-none;
 }

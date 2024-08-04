@@ -11,12 +11,12 @@ block content
   block section-modulable
     +sectionModulable('', false, [about_groupes[0].our_design], 'About us')
     
-  section(class="container bg-[#F4F5F5] pb-0") 
-    div(class="flex items-end justify-between space-x-4 px-[70px] pb-[80px]")
-      div(class="max-w-[515px]") 
+  section(class="container bg-[#F4F5F5] pb-0 max-md:pt-[30px]") 
+    div(class="flex items-end justify-between gap-x-4 px-clamp pb-clamp max-md:flex-col max-md:gap-y-5 max-md:gap-x-0")
+      div(class="max-w-[515px] max-md:max-w-full") 
         h2(class="title_before text-2xl" data-content="Who we are") Goal focussed
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      div(class="max-w-[515px]") 
+      div(class="max-w-[515px] max-md:max-w-full") 
         h2(class="text-2xl") Continuous improvement
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
     img(src="./assets/images/focussed-image.png", alt="image-focussed" , class='w-full' , loading="lazy")  

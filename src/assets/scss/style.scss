@@ -73,7 +73,7 @@
 
    /*Styles hero-section__img */
    .hero-section__img{
-      @apply w-[45%];
+      @apply w-[45%] md-max-md:w-clamp max-md:w-full;
    }
 
    /* Styles title_before */
@@ -86,7 +86,7 @@
     .features-list{
       @apply flex justify-center mt-[45px] flex-wrap gap-7;
       .features-list_item{
-         @apply px-[25px] py-[35px] max-w-[405px];
+         @apply px-[25px] py-[35px];
          flex: 1 1 320px;
          &:hover{
             cursor: pointer;
@@ -235,7 +235,7 @@ button{
 
  /* Styles form_container */
  .form_container{
-   @apply mt-[64px] p-[55px] max-w-[1000px] mx-auto bg-grey rounded-3xl;
+   @apply mt-[64px] p-clamp max-w-[1000px] mx-auto bg-grey rounded-3xl;
    ul{
       &>:last-child{
          @apply flex-auto;
@@ -337,7 +337,20 @@ button{
       padding-left: var(--padding-clamp);
       padding-right: var(--padding-clamp);
    }
+   .p-clamp{
+      padding: clamp(27.5px, 10vw, 55px);
+   }
    .pt-clamp{
       padding-top: clamp(48px, 8.7vw, 96px);
+   }
+   .space-x-clamp{
+      column-gap : clamp(5px , 5vw , 10px)
+   }
+   .px-clamp{  
+      padding-left: clamp(35px , 5.18vw, 70px);
+      padding-right: clamp(35px , 5.18vw, 70px);
+   }
+   .pb-clamp{
+      padding-bottom: clamp(40px, 9.35vw, 80px);
    }
 }

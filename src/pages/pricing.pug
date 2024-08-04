@@ -22,12 +22,12 @@ block content
      button(class="btn") 
       a(href="#") Get started  
  block accordion_section
-  section(class='container flex items-start justify-between')
+  section(class='container flex items-start justify-between max-lg:flex-col max-lg:gap-y-7')
    block section_title 
-    div(class='max-w-[409px]')
+    div(class='max-w-[409px] max-lg:max-w-full')
      h2(class='mb-[16px]') Frequently asked questions
      a(href="./contact.html" , class='text-royal-blue') Contact us for more info
-    div(class='w-[50%]')
+    div(class='w-[50%] max-lg:w-full')
      each item in info_accordion 
       details(class='accordion_details' , open=item.type)
        summary(class="summary_after flex justify-between space-x-2 mb-3") 

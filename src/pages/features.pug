@@ -10,14 +10,14 @@ block title
 block content 
   block hero_section
     section(class="bg-tint-blue")
-      div(class="container flex justify-between") 
-        div(class="max-w-[485px]") 
+      div(class="container flex justify-between max-md:flex-col gap-y-11") 
+        div(class="max-w-[485px] max-md:max-w-full") 
           h1(class="text-white mb-[24px]") All the features you need
           p(class="text-grey mb-[48px]") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
           ul(class="flex space-x-[40px]") 
             li
               a(href="./pricing.html" , class="btn") View Pricing
-        img(src="./assets/images/feature.svg", alt="feature" , class="hero-section__img" , loading="lazy") 
+        img(src="./assets/images/feature.svg", alt="feature" , class="hero-section__img max-md:w-[90%]" , loading="lazy") 
   block list-images
    ul(class="container flex justify-center flex-wrap gap-9 mt-[70px] ") 
     li 
@@ -54,12 +54,12 @@ block content
   block section-modulable
     +sectionModulable('bg-yellow bg-opacity-10 ', true, [features_groupes[0].quick_delivery] , 'Quick Delivery')
   block accordion_section
-   section(class='container flex items-start justify-between')
+   section(class='container flex items-start justify-between max-lg:flex-col max-lg:gap-y-7')
     block section_title 
-     div(class='max-w-[409px]')
+     div(class='max-w-[409px] max-lg:max-w-full')
       h2(class='mb-[16px]') Frequently asked questions
       a(href="./contact.html" , class='text-royal-blue') Contact us for more info
-     div(class='w-[50%]')
+     div(class='w-[50%] max-lg:w-full')
       each item in info_accordion 
        details(class='accordion_details' , open=item.type)
         summary(class="summary_after flex justify-between space-x-2 mb-3") 

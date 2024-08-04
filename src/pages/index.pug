@@ -7,27 +7,27 @@ block title
 block content 
   block hero_section
     section(class="bg-tint-blue")
-      div(class="container flex justify-between") 
-        div(class="max-w-[585px]") 
+      div(class="container flex justify-between max-md:flex-col gap-y-11") 
+        div(class="max-w-[585px] max-md:max-w-full") 
           h1(class="text-white mb-[24px]") Building stellar websites for early startups
           p(class="text-grey mb-[48px]") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
-          ul(class="flex space-x-[40px]") 
+          ul(class="flex space-x-clamp") 
             li
               a(href="./work.html" , class="btn") View our work
             li 
               a(href="./pricing.html" , class="text-grey") View Pricing 
                 img(src="./assets/images/arrow-right-white.png" , alt="arrow-right" , class='ml-[12px]')
-        img(src="./assets/images/illustration.svg", alt="illustration" , class="hero-section__img" , loading="lazy") 
+        img(src="./assets/images/illustration.svg", alt="illustration" , class="hero-section__img max-md:w-[90%]" , loading="lazy") 
   section(class='bg-grey')
-    div(class='container flex items-start justify-between')
-      div(class="max-w-[400px]") 
+    div(class='container flex items-start justify-between max-md:flex-col max-md:gap-y-7')
+      div(class="max-w-[400px] max-md:max-w-full") 
         h2(class="mb-[16px]") How we work
         p(class="mb-[16px]") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
         a(href="./work.html" , class="text-royal-blue") Get in touch with us
           img(src="./assets/images/arrow-right-blue.png" , alt="arrow-right" , class='ml-[12px]')
-      ul(class='grid grid-cols-2 gap-[48px]')
+      ul(class='grid grid-cols-2 gap-[48px] max-md:grid-cols-auto-fill-minmax-300 max-md:w-[98%]')
         each item in works
-          li(class='max-w-[300px]')
+          li(class='max-w-[300px] max-md:max-w-full')
             img(src=`./assets/images/${item.img}`, loading="lazy")  
             h3(class='my-[8px]')=item.title 
             p=item.describe 
@@ -91,12 +91,12 @@ block content
     button(type="button" class="slick-next") 
      img(src="./assets/images/icon-next.png", alt="icon-next" , loading="lazy")         
   block accordion_section
-   section(class='container flex items-start justify-between')
+   section(class='container flex items-start justify-between max-lg:flex-col max-lg:gap-y-7')
     block section_title 
-     div(class='max-w-[409px]')
+     div(class='max-w-[409px] max-lg:max-w-full')
       h2(class='mb-[16px]') Frequently asked questions
       a(href="./contact.html" , class='text-royal-blue') Contact us for more info
-     div(class='w-[50%]')
+     div(class='w-[50%] max-lg:w-full')
       each item in info_accordion 
        details(class='accordion_details' , open=item.type)
         summary(class="summary_after flex justify-between space-x-2 mb-3") 

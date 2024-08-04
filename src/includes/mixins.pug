@@ -1,7 +1,7 @@
 //- mixins.pug
 mixin sectionModulable(containerClass, reverse=false, data, title)
   section(class=containerClass)
-    div(class=`container flex justify-between ${reverse ? 'flex-row-reverse' : ''} gap-[30px]`)
+    div(class=`container flex justify-between ${reverse ? 'flex-row-reverse' : ''} gap-[30px] max-md:flex-col max-md:items-start `)
       each item in data
         div.section-content
           h2.title_before(data-content=title)= item.title

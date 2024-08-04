@@ -26,8 +26,19 @@ module.exports = {
       'opacity-bg' : "url('../images/bg-opacity.png')"
     },
     extend: {
+      screens:{
+        'max-md' :{max:  '768px'},
+        'max-lg' : {max : '800px'},
+        'md-max-md': {min:'768px', max:'821px'}
+      },
       flex : {
         "1" : ' 1 1 250px',
+      },
+      width: {
+        'clamp': 'clamp(47%, 50vw, 53%)',
+      },
+      gridTemplateColumns: {
+        'auto-fill-minmax-300': 'repeat(auto-fill, minmax(220px, 1fr))',
       }
     },
   },

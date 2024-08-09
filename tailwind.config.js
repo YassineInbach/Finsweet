@@ -29,6 +29,7 @@ module.exports = {
       screens:{
         'max-md' :{max:  '768px'},
         'max-lg' : {max : '800px'},
+        'max-xl' : {max:'852px'},
         'md-max-md': {min:'768px', max:'821px'}
       },
       flex : {
@@ -37,9 +38,24 @@ module.exports = {
       width: {
         'clamp': 'clamp(47%, 50vw, 53%)',
       },
+      minHeight:{
+        'clamp' : 'clamp(315px, 50vw, 630px)',
+      },
       gridTemplateColumns: {
         'auto-fill-minmax-300': 'repeat(auto-fill, minmax(220px, 1fr))',
+      },
+      listStyleType: {
+        square: 'square',
+      },
+      display: {
+        'none': 'none',
+      },
+      backgroundColor:{
+        'transparent' : 'transparent',
       }
+    },
+    variants: {
+      display: ['responsive'], // Assurez-vous que vous avez configuré les variantes si vous utilisez les classes responsive
     },
   },
   plugins: [],

@@ -71,6 +71,15 @@
       justify-content: space-between;
    }
 
+   /*Styles navigation Menu*/
+   .navigation{
+      @apply max-md:absolute max-md:inset-0 max-md:flex-col max-md:justify-center
+       max-md:h-[100vh] max-md:w-full bg-tint-blue max-md:gap-y-[35px];
+      ul{
+         @apply max-md:flex-col max-md:gap-y-[35px];
+      } 
+   }
+
    /*Styles hero-section__img */
    .hero-section__img{
       @apply w-[45%] md-max-md:w-clamp max-md:w-full;
@@ -160,9 +169,10 @@ button{
 .cards_plan {
    article {
      @apply px-[48px] py-[64px] rounded-lg;
-     h2{
+     h4{
+      @apply text-3xl;
       &::after{
-         @apply text-royal-blue text-xs font-normal ml-3 align-top;
+         @apply text-royal-blue text-xs font-normal ml-3 align-super;
          content: attr(data-content);
       }
      }
@@ -190,10 +200,7 @@ button{
       @apply bg-grey;
  
      .btn {
-      @apply bg-dark-blue;
-       a{
-         @apply text-grey;
-       }
+      @apply text-grey bg-dark-blue;
      }
    }
  
@@ -207,13 +214,13 @@ button{
    /* Specific styles for the second article */
    & > :nth-child(2) {
      @apply bg-[#1C1E53];
-     h2{
+     h4{
       &::after{
          @apply text-yellow;
       }
      }
  
-     h2,
+     h4,
      h3,
      li,
      p {
@@ -250,7 +257,7 @@ button{
             }
             @apply text-xs  text-dark-blue font-medium;
          }
-         .form_input{
+         .form_input{   
             @apply py-[16px] px-3 rounded-md border border-tint-blue;
          }
       }
@@ -326,6 +333,9 @@ button{
 } 
 
 @layer utilities{
+   .display-none{
+      display: none;
+   }
    .text-base{
       font-size: clamp(20px ,  2.59vw, theme('fontSize.base'));
    }

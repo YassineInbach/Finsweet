@@ -37,7 +37,7 @@ $(document).ready(function() {
       ]
     });
   }
-
+ 
   // Call initialization functions
   initializeSingleItemSlider();
   initializeMultipleItemsSlider();

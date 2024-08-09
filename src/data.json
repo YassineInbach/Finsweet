@@ -259,28 +259,23 @@
     ],
     "info_accordion" : [
         {
-            "num" : "01",
             "title" : "How much time does it take?",
             "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
             "type" : "open"
         },
         {
-            "num" : "02",
             "title" : "What is your class naming convention?",
             "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "num" : "03",
             "title" : "How do you communicate?",
             "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "num" : "04",
             "title" : "I have a bigger project. Can you handle it?",
             "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            "num" : "05",
             "title" : "I have a bigger project. Can you handle it?",
             "describe" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         }
@@ -289,18 +284,21 @@
             "home": {
                 "blog": [
                     {   "img" : "img-1.png",
+                         "date_time" : "2021-01-19",
                         "date": "19 Jan 2021",
                         "title": "How one Webflow user grew his single person consultancy from $0-100K in 14 months",
                         "describe": "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract"
                     },
                     {
                         "img" : "img-2.png",
+                        "date_time" : "2022-02-11",
                         "date": "11 Fev 2022",
                         "title": "How one Webflow user grew his single person consultancy from $0-100K in 6 months",
                         "describe": "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract"
                     },
                     {
                         "img" : "img-3.png",
+                        "date_time" : "2023-12-28",
                         "date": "28 Dec 2023",
                         "title": "How one Webflow user grew his single person consultancy from $0-100K in 3 months",
                         "describe": "See how pivoting to Webflow changed one person’s sales strategy and allowed him to attract"

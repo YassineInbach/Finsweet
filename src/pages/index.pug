@@ -7,8 +7,8 @@ block title
 block content 
   block hero_section
     section(class="bg-tint-blue")
-      div(class="container flex justify-between max-md:flex-col gap-y-11") 
-        div(class="max-w-[585px] max-md:max-w-full") 
+      div(class="container flex justify-between md:flex-col gap-y-11") 
+        div(class="max-w-[585px] md:max-w-full") 
           h1(class="text-white mb-[24px]") Building stellar websites for early startups
           p(class="text-grey mb-[48px]") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
           ul(class="flex space-x-clamp") 
@@ -17,17 +17,17 @@ block content
             li 
               a(href="./pricing.html" , class="text-grey") View Pricing 
                 img(src="./assets/images/arrow-right-white.png" , alt="arrow-right" , class='ml-[12px]')
-        img(src="./assets/images/illustration.svg", alt="illustration" , class="hero-section__img max-md:w-[90%]" , loading="lazy") 
+        img(src="./assets/images/illustration.svg", alt="illustration" , class="hero-section__img md:w-[90%]" , loading="lazy") 
   section(class='bg-grey')
-    div(class='container flex items-start justify-between max-md:flex-col max-md:gap-y-7')
-      div(class="max-w-[400px] max-md:max-w-full") 
+    div(class='container flex items-start justify-between md:flex-col md:gap-y-7')
+      div(class="max-w-[400px] md:max-w-full") 
         h2(class="mb-[16px]") How we work
         p(class="mb-[16px]") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
         a(href="./work.html" , class="text-royal-blue") Get in touch with us
           img(src="./assets/images/arrow-right-blue.png" , alt="arrow-right" , class='ml-[12px]')
-      ul(class='grid grid-cols-2 gap-[48px] max-md:grid-cols-auto-fill-minmax-300 max-md:w-[98%]')
+      ul(class='grid grid-cols-2 gap-[48px] md:grid-cols-auto-fill-minmax-300 md:w-[98%]')
         each item in works
-          li(class='max-w-[300px] max-md:max-w-full')
+          li(class='max-w-[300px] md:max-w-full')
             img(src=`./assets/images/${item.img}`, loading="lazy")  
             h3(class='my-[8px]')=item.title 
             p=item.describe 
@@ -91,25 +91,25 @@ block content
     button(type="button" class="slick-next") 
      img(src="./assets/images/icon-next.png", alt="icon-next" , loading="lazy")         
   block accordion_section
-   section(class='container flex items-start justify-between max-lg:flex-col max-lg:gap-y-7')
+   section(class='container flex items-start justify-between xl:flex-col xl:gap-y-7')
     block section_title 
-     div(class='max-w-[409px] max-lg:max-w-full')
+     div(class='max-w-[409px] xl:max-w-full')
       h2(class='mb-[16px]') Frequently asked questions
       a(href="./contact.html" , class='text-royal-blue') Contact us for more info
-     div(class='w-[50%] max-lg:w-full max-lg:px-[20px]')
+     div(class='w-[50%] xl:w-full xl:px-[20px]')
       ul
        each item in info_accordion
         li(class="list-square")
          details(class='accordion_details' , open=item.type)
           summary(class="summary_after flex justify-between space-x-2 mb-3") 
             h3(class='font-medium')=item.title
-          p(class='mx-auto max-w-[600px] mb-[20px] max-lg:max-w-full')=item.describe
-  section(class='container flex bg-tint-blue p-0 max-md:flex-col')
-   div(class='bg-custom-bg bg-repeat-round min-h-[630px] max-w-[656px] max-md:max-w-full max-md:min-h-clamp')
-    div(class='bg-opacity-bg py-clamp pt-clamp min-h-[630px] max-md:min-h-clamp') 
+          p(class='mx-auto max-w-[600px] mb-[20px] xl:max-w-full')=item.describe
+  section(class='container flex bg-tint-blue p-0 md:flex-col')
+   div(class='bg-custom-bg bg-repeat-round min-h-[630px] max-w-[656px] md:max-w-full md:min-h-clamp')
+    div(class='bg-opacity-bg py-clamp pt-clamp min-h-[630px] md:min-h-clamp') 
      h2(class='text-white mb-[24px]') Building stellar websites for early startups
      p(class='text-white') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
-   div(class='px-[50px] p-[50px] max-md:px-[30px] max-md:p-[30px] ') 
+   div(class='px-[50px] p-[50px] md:px-[30px] md:p-[30px] ') 
     h3(class='text-white text-lg font-medium') Send inquiry
     p(class='text-grey mt-[16px]') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
     form(action="", class="grid gap-y-3 my-[40px]")

@@ -9,7 +9,7 @@ block content
  section(class='pb-0') 
   block section__contenu
    div(class='mx-auto max-w-[978px] text-center px-3')
-    h1(class='mb-[16px]') A UX Case Study on Creating a Studious Environment for Students
+    h2(class='mb-[16px]') A UX Case Study on Creating a Studious Environment for Students
     p Andrew Jonson  Posted on 27th January 2021
    img(src="./assets/images/environment-students.png", alt="img-environment-students" , class="container flex my-[48px]" , loading="lazy")
    div(class="mx-auto max-w-[978px] px-[32px]") 
@@ -18,11 +18,11 @@ block content
      button(class='text-xs btn-read-more text-dark-blue font-medium flex gap-x-[10px] mx-auto my-[32px]') Lire la suite
       img(src="./assets/images/chevron-up.svg", alt="chevron-up")
      div(id="more-text") 
-      h2(class='text-2xl mb-[32px]') Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      h3(class='text-2xl mb-[32px]') Lorem ipsum dolor sit amet, consectetur adipiscing elit.
       p(class='mb-[16px]') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
        span(class='text-royal-blue') Excepteur sint occaecat 
        | cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      h2(class='text-2xl my-[32px]') Ut enim ad minim veniam, quis nostrud.
+      h3(class='text-2xl my-[32px]') Ut enim ad minim veniam, quis nostrud.
       p(class='mb-[16px]') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
        span(class='text-royal-blue')  cupidatat non 
        | cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -34,7 +34,7 @@ block content
        span(class='text-royal-blue')  exercitation ullamco 
        | laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       img(src="./assets/images/img-blog.jpg", alt="img-blog" , class="w-full my-[32px]" , loading="lazy") 
-      h2(class='text-2xl mb-[24px]') Ut enim ad minim veniam, quis nostrud.
+      h3(class='text-2xl mb-[24px]') Ut enim ad minim veniam, quis nostrud.
       p(class='mb-[80px]') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
        span(class='text-royal-blue')  exercitation ullamco 
        | laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
@@ -44,10 +44,11 @@ block content
     ul(class='flex justify-between flex-wrap gap-5 mt-[64px]')
      each item in our_blog
       li(class='flex-1')
-       img(src=`./assets/images/${item.img}`, alt="" , class="w-full" , loading="lazy")
-       article(class='mt-[40px]')
-        p(class="mb-3")=item.date 
+       article
+        img(src=`./assets/images/${item.img}`, alt="" , class="w-full" , loading="lazy")
+        p(class="mb-3 mt-[40px]")
+         time(datetime=item.date_time)= item.date
         h3(class="text-base font-medium mb-3")=item.title 
         p(class="mb-5")=item.describe    
         a(href="#" , class="font-medium") Read more
-         img(src="./assets/images/arrow-right-black.png" , alt="arrow-right" , class='ml-[12px] align-middle' , loading="lazy")      
+         img(src="./assets/images/arrow-right-black.png" , alt="arrow-right" , class='ml-[12px] align-middle' , loading="lazy")

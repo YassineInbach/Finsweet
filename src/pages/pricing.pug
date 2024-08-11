@@ -8,30 +8,29 @@ block content
  section(class='container pb-0')
   block section__contenu
    div(class='mx-auto max-w-[563px] text-center')
-    h1(class='mb-[16px]') Our Pricing Plans
+    h2(class='mb-[16px]') Our Pricing Plans
     p When you’re ready to go beyond prototyping in Figma, Webflow is ready to help you bring your designs to life — without coding them. 
   div(class='cards_plan flex items-start justify-between mt-[64px] gap-5')
    each item in pricing 
     article(class='w-1/2')
-     h2(class='mb-[20px]' data-content=item.dataContent)=item.price 
+     h4(class='mb-[20px]' data-content=item.dataContent)=item.price 
      h3(class='mb-[8px] font-medium')=item.title 
      p=item.describe 
      ul 
       each listItem in item.list
        li=listItem
-     button(class="btn") 
-      a(href="#") Get started  
+     button(class="btn") Get started  
  block accordion_section
-  section(class='container flex items-start justify-between max-lg:flex-col max-lg:gap-y-7')
-   block section_title 
-    div(class='max-w-[409px] max-lg:max-w-full')
-     h2(class='mb-[16px]') Frequently asked questions
-     a(href="./contact.html" , class='text-royal-blue') Contact us for more info
-    div(class='w-[50%] max-lg:w-full')
-     each item in info_accordion 
-      details(class='accordion_details' , open=item.type)
-       summary(class="summary_after flex justify-between space-x-2 mb-3") 
-        div(class="flex gap-x-7") 
-         h4(class='text-base text-royal-blue font-medium')=item.num
-         h3(class='font-medium')=item.title
-       p(class='mx-auto max-w-[540px] mb-[20px]')=item.describe
+   section(class='container flex items-start justify-between max-lg:flex-col max-lg:gap-y-7')
+    block section_title 
+     div(class='max-w-[409px] max-lg:max-w-full')
+      h2(class='mb-[16px]') Frequently asked questions
+      a(href="./contact.html" , class='text-royal-blue') Contact us for more info
+     div(class='w-[50%] max-lg:w-full max-lg:px-[20px]')
+      ul
+       each item in info_accordion
+        li(class="list-square")
+         details(class='accordion_details' , open=item.type)
+          summary(class="summary_after flex justify-between space-x-2 mb-3") 
+            h3(class='font-medium')=item.title
+          p(class='mx-auto max-w-[600px] mb-[20px] max-lg:max-w-full')=item.describe

@@ -11,12 +11,12 @@ block content
   block section-modulable
     +sectionModulable('', false, [about_groupes[0].our_design], 'About us')
     
-  section(class="container bg-[#F4F5F5] pb-0 max-md:pt-[30px]") 
-    div(class="flex items-end justify-between gap-x-4 px-clamp pb-clamp max-md:flex-col max-md:gap-y-5 max-md:gap-x-0")
-      div(class="max-w-[515px] max-md:max-w-full") 
+  section(class="container bg-[#F4F5F5] pb-0 md:pt-[30px]") 
+    div(class="flex items-end justify-between gap-x-4 px-clamp sm:px-0 pb-clamp md:flex-col md:gap-y-5 md:gap-x-0")
+      div(class="max-w-[515px] md:max-w-full") 
         h2(class="title_before text-2xl" data-content="Who we are") Goal focussed
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      div(class="max-w-[515px] max-md:max-w-full") 
+      div(class="max-w-[515px] md:max-w-full") 
         h2(class="text-2xl") Continuous improvement
         p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.  
     img(src="./assets/images/focussed-image.png", alt="image-focussed" , class='w-full' , loading="lazy")  
@@ -25,7 +25,7 @@ block content
     h2(class="text-center") The process we follow
     ul(class="flex justify-center flex-wrap gap-x-5 gap-y-10 mt-[48px]") 
       each item in process 
-        li(class="max-w-[270px] max-md:max-w-full") 
+        li(class="max-w-[270px] sm:max-w-full") 
           img(src= `./assets/images/${item.src}`, alt="line-icon" , class="mb-[20px] w-full" , loading="lazy") 
           h3(class="mb-3")= item.title 
           p= item.describe
@@ -35,7 +35,7 @@ block content
       +sectionModulable('', false, [about_groupes[0].our_mission], 'Our mission')
       
     block section-modulable
-      +sectionModulable('container pt-0 ', true, [about_groupes[0].our_vision], 'Our vision')
+      +sectionModulable('container pt-0 px-0', true, [about_groupes[0].our_vision], 'Our vision')
       
   section 
     block cards 

@@ -96,20 +96,20 @@ block content
      div(class='max-w-[409px] max-lg:max-w-full')
       h2(class='mb-[16px]') Frequently asked questions
       a(href="./contact.html" , class='text-royal-blue') Contact us for more info
-     div(class='w-[50%] max-lg:w-full')
-      each item in info_accordion 
-       details(class='accordion_details' , open=item.type)
-        summary(class="summary_after flex justify-between space-x-2 mb-3") 
-         div(class="flex gap-x-7")
-          h4(class='text-base text-royal-blue font-medium')=item.num
-          h3(class='font-medium')=item.title
-        p(class='mx-auto max-w-[540px] mb-[20px]')=item.describe
-  section(class='container flex bg-tint-blue p-0')
-   div(class='bg-custom-bg bg-repeat-round min-h-[630px] max-w-[656px]')
-    div(class='bg-opacity-bg py-clamp pt-clamp min-h-[630px]') 
+     div(class='w-[50%] max-lg:w-full max-lg:px-[20px]')
+      ul
+       each item in info_accordion
+        li(class="list-square")
+         details(class='accordion_details' , open=item.type)
+          summary(class="summary_after flex justify-between space-x-2 mb-3") 
+            h3(class='font-medium')=item.title
+          p(class='mx-auto max-w-[600px] mb-[20px] max-lg:max-w-full')=item.describe
+  section(class='container flex bg-tint-blue p-0 max-md:flex-col')
+   div(class='bg-custom-bg bg-repeat-round min-h-[630px] max-w-[656px] max-md:max-w-full max-md:min-h-clamp')
+    div(class='bg-opacity-bg py-clamp pt-clamp min-h-[630px] max-md:min-h-clamp') 
      h2(class='text-white mb-[24px]') Building stellar websites for early startups
      p(class='text-white') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.
-   div(class='px-[50px] p-[50px] ') 
+   div(class='px-[50px] p-[50px] max-md:px-[30px] max-md:p-[30px] ') 
     h3(class='text-white text-lg font-medium') Send inquiry
     p(class='text-grey mt-[16px]') Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.
     form(action="", class="grid gap-y-3 my-[40px]")
@@ -125,9 +125,10 @@ block content
     ul(class='flex justify-between flex-wrap gap-5 mt-[64px]')
      each item in our_blog
       li(class='flex-1')
-       img(src=`./assets/images/${item.img}`, alt="" , class="w-full" , loading="lazy")
-       article(class='mt-[40px]')
-        p(class="mb-3")=item.date 
+       article
+        img(src=`./assets/images/${item.img}`, alt="" , class="w-full" , loading="lazy")
+        p(class="mb-3 mt-[40px]")
+         time(datetime=item.date_time)= item.date
         h3(class="text-base font-medium mb-3")=item.title 
         p(class="mb-5")=item.describe    
         a(href="#" , class="font-medium") Read more

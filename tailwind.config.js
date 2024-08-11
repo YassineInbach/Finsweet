@@ -2,6 +2,13 @@
 module.exports = {
   content: ["./src/**/*.{html,js,pug}"],
   theme: {
+    screens: {
+      'sm': { max: '607px' },   // Small mobile devices
+      'md': { max: '768px' },   // Medium mobile devices
+      'xl': { max: '800px' },   // Large mobile devices or small tablets
+      '2xl': { max: '852px' },  // Small desktops or large tablets
+      '3xl': { max: '1000px' }, // Medium desktops
+    },    
     colors : {
       white : '#FFFFFF',
       'royal-blue' : '#2405F2',
@@ -26,12 +33,6 @@ module.exports = {
       'opacity-bg' : "url('../images/bg-opacity.png')"
     },
     extend: {
-      screens:{
-        'max-md' :{max:  '768px'},
-        'max-lg' : {max : '800px'},
-        'max-xl' : {max:'852px'},
-        'md-max-md': {min:'768px', max:'821px'}
-      },
       flex : {
         "1" : ' 1 1 250px',
       },
@@ -43,6 +44,8 @@ module.exports = {
       },
       gridTemplateColumns: {
         'auto-fill-minmax-300': 'repeat(auto-fill, minmax(220px, 1fr))',
+        'auto-fit-300': 'repeat(auto-fit, minmax(350px, 1fr))',
+        'auto-fit-200': 'repeat(auto-fit, minmax(320px, 1fr))',
       },
       listStyleType: {
         square: 'square',

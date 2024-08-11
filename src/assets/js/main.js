@@ -92,6 +92,9 @@ const data = {
     },
   ],
 };
+var menu = document.getElementById('menu');
+var toggle = document.querySelector('.toggle');
+var icon = document.getElementById('icon');
 var menuItems = document.querySelectorAll('#menu ul > li > a');
 var detailsElements = document.querySelectorAll(".accordion_details");
 var menuWorks = document.querySelectorAll(".menu_works");
@@ -100,6 +103,29 @@ var readMore = document.querySelector('.btn-read-more');
 var moreText = document.getElementById('more-text');
 
 let open = false;
+//function toggle menu
+toggle.addEventListener('click' , () => {
+  console.log('toggle');
+  if(!open){
+    setTimeout(() => {
+      menu.style.display="flex";
+    }, 150)
+    document.body.style.overflowY = "hidden";
+    icon.src = "./assets/images/xmark-solid.svg";
+    open = true;
+    console.log("show menu");
+  }
+  else{
+    setTimeout(() => {
+      menu.style.display = "none";
+    }, 150)
+    document.body.style.overflowY = "auto";
+    icon.src = "./assets/images/bars-solid.svg";
+    open = false;
+    console.log('remove menu')
+  }
+})
+
 
   // Fonction pour mettre à jour les liens actifs en fonction de l'URL actuelle
   function setActiveLink() {

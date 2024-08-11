@@ -25,7 +25,7 @@ block content
     h2(class="text-center") The process we follow
     ul(class="flex justify-center flex-wrap gap-x-5 gap-y-10 mt-[48px]") 
       each item in process 
-        li(class="max-w-[270px]") 
+        li(class="max-w-[270px] max-md:max-w-full") 
           img(src= `./assets/images/${item.src}`, alt="line-icon" , class="mb-[20px] w-full" , loading="lazy") 
           h3(class="mb-3")= item.title 
           p= item.describe
@@ -44,6 +44,7 @@ block content
         ul(class="features-list")
           each item in benefits 
             li(class="features-list_item bg-grey")
+             article
               img(src=`./assets/images/${item.icon}`, alt=item.alt , loading="lazy")
               h3= item.title 
               p= item.describe    
@@ -69,6 +70,7 @@ block content
       ul(class="multiple-items flex justify-center mt-[48px] space-x-5") 
         each item in team
           li
+           article
             img(src=`assets/images/${item.img}` , loading="lazy")
             h3= item.name 
             h4= item.designation

@@ -1,9 +1,9 @@
-div(class='container flex justify-between max-xl:flex-wrap max-md:!justify-between max-xl:justify-center')
+div(class='container flex justify-between 2xl:flex-wrap md:!justify-between 2xl:justify-center')
  block logo
   a(href="./index.html" , class=('text-base text-white'))
    img(src="./assets/images/logo.png", alt="logo-finsweet" , class=('align-sub mr-[5px]') , loading="lazy")
    |Finsweet  
- nav(id="menu" , class='navigation max-md:display-none flex gap-x-[48px]')
+ nav(id="menu" , class='navigation md:display-none flex gap-x-[48px]')
   ul(class='flex gap-x-[32px]') 
    li
     a(href="./index.html" , class='link active') Home
@@ -18,5 +18,5 @@ div(class='container flex justify-between max-xl:flex-wrap max-md:!justify-betwe
    li  
     a(href="./blog.html" , class='link') Blog
   a(href="./contact.html" , class='btn') Contact us   
- button(class='display-none bg-transparent max-md:absolute max-md:right-[40px] max-md:block') 
-  img(src="./assets/images/bars-solid.svg", alt="img-bars" , class='w-[40px]') 
+ button(class='toggle display-none bg-transparent z-10 md:absolute md:right-[40px] md:block') 
+  img(src="./assets/images/bars-solid.svg", alt="img-bars" , id='icon' , class='w-[40px]') 

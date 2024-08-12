@@ -363,4 +363,11 @@ button{
    .pb-clamp{
       padding-bottom: clamp(40px, 9.35vw, 80px);
    }
+   .bottom-40{
+      bottom:clamp(20px , 8vw , 40px);
+   }
+   .px-30{  
+      padding-left: clamp(15px , 6vw, 30px);
+      padding-right: clamp(15px , 6vw, 30px);
+   }
 }

@@ -31,35 +31,35 @@ block content
             img(src=`./assets/images/${item.img}`, loading="lazy")  
             h3(class='my-[8px]')=item.title 
             p=item.describe 
-  section(class='container pb-[80px]') 
-    div(class='flex justify-between')
+  section(class='container pb-[80px] px-[30px]') 
+    div(class='flex justify-between gap-y-2 sm:flex-col')
       h2 View our projects
       a(href="./work.html") View More
         img(src="./assets/images/arrow-right-black.png" , alt="arrow-right" , class='ml-[12px]')
-    ul(class='grid grid-cols-[70%_30%] gap-x-[10px] mt-[64px]') 
+    ul(class='grid grid-cols-[70%_30%] gap-4 mt-[64px] md:grid-cols-none') 
      each project, index in projects
       if index === 0
-        li(class='relative row-span-2')
-          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-[97%] h-[91.5%]' , loading="lazy")
-          div(class='absolute top-0 bg-tint-blue bg-opacity-85 h-[91.5%] w-[48%]') 
-            div(class='absolute bottom-[40px] px-[30px]') 
-              h3(class='text-sm text-white mb-[16px]')= project.title
+        li(class='relative col-start-1 col-end-2 row-span-2 md:col-span-2 md:row-span-1')
+          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-full h-full' , loading="lazy")
+          div(class='absolute top-0 bg-tint-blue bg-opacity-85 h-full w-[48%] sm:w-[70%]') 
+            div(class='absolute bottom-40 px-30 ') 
+              h3(class='text-clamp-h3 text-white mb-[16px]')= project.title
               p(class='text-grey mb-[25px]')= project.description
-              a(href=project.href , class='text-yellow') 
+              a(href=project.href , class='text-clamp text-yellow') 
                 | View projet 
                 img(src="./assets/images/arrow-right-yellow.png" , alt="arrow-right" , class='ml-[12px]')
       else if index === 1
-        li(class='relative col-span-1')
-          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-full h-[83%] bg-grey' , loading="lazy")
-          div(class='absolute top-0 bg-tint-blue bg-opacity-75 h-[90%] w-full') 
-            div(class='absolute bottom-[20px] px-[30px]')
-              h3(class='text-sm text-white mb-[16px]')= project.title
-              a(href=project.href , class='text-yellow') 
+        li(class='relative col-start-2 col-end-3 row-span-1 md:col-start-1 md:col-end-2 md:row-start-2')
+          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-full h-full bg-grey object-cover' , loading="lazy")
+          div(class='absolute top-0 bg-tint-blue bg-opacity-75 h-full w-full sm:display-none') 
+            div(class='absolute bottom-[20px] px-30')
+              h3(class=' text-white mb-[16px]')= project.title
+              a(href=project.href , class='text-clamp text-yellow') 
                 | View projet 
                 img(src="./assets/images/arrow-right-yellow.png" , alt="arrow-right" , class='ml-[12px]')
       else if index === 2
-        li(class='col-span-1')
-          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-full h-[83%]' , loading="lazy")
+        li(class='col-start-2 col-end-3 row-span-1 md:row-start-2')
+          img(src=`./assets/images/${project.src}`, alt=project.alt , class='w-full h-full object-cover' , loading="lazy")
   section(class='bg-grey')
    block cards 
     div(class='container')
@@ -67,7 +67,7 @@ block content
      ul(class="features-list")
       each item in features 
        li(class="features-list_item bg-white")
-        img(src=`./assets/images/${item.icon}`, alt=item.alt , loading="lazy" )
+        img(src=`./assets/images/${item.icon}`, alt=item.alt , class='object-cover',loading="lazy" )
         h3=item.title 
         p=item.describe
   section(class='container flex items-start justify-between relative space-x-1')

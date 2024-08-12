@@ -125,27 +125,29 @@ toggle.addEventListener('click' , () => {
     console.log('remove menu')
   }
 })
-
-
-  // Fonction pour mettre à jour les liens actifs en fonction de l'URL actuelle
-  function setActiveLink() {
-      var currentUrl = window.location.pathname.split("/").slice(-1)[0];
-      var locationUrl = window.location.href;
-      console.log('locationUrl' , locationUrl.split("/").slice(-1)[0]);
-      console.log('cuurentUrl' , currentUrl);
-      menuItems.forEach(function(link) {
-          var linkUrl = link.getAttribute('href').split("/").slice(-1)[0];
-          // Comparer l'URL actuelle avec l'attribut href du lien
-          if (linkUrl === currentUrl) {
-              link.classList.add('active');
-          } else {
-              link.classList.remove('active');
-          }
-      });
+function setActiveLink() {
+  var currentUrl = window.location.pathname.split("/").slice(-1)[0];
+  var locationUrl = window.location.href;
+  console.log('locationUrl' , locationUrl);
+  console.log('cuurentUrl' , currentUrl);
+  // Si currentUrl est vide, cela signifie que nous sommes sur la page d'accueil
+  if (currentUrl === '') {
+      currentUrl = 'index.html'; // ou tout autre nom de fichier de votre page d'accueil
   }
 
-  // // Initialiser les liens actifs
-  setActiveLink();
+  menuItems.forEach(function(link) {
+      var linkUrl = link.getAttribute('href').split("/").slice(-1)[0];
+      // Comparer l'URL actuelle avec l'attribut href du lien
+      if (linkUrl === currentUrl) {
+          link.classList.add('active');
+      } else {
+          link.classList.remove('active');
+      }
+  });
+}
+
+// Appeler la fonction lors du chargement de la page
+setActiveLink();
 
 function updateMenu(value) {
   if (data[value]) {
@@ -211,11 +213,16 @@ updateIcons(); // Initial call to set the correct icons on page load
 readMore.addEventListener('click', () => {
   console.log("read more");
   if (open) {
-    moreText.style.display="none";
+    setTimeout(() => {
+      moreText.style.display="none";
+    },300)
     console.log("remove text")
     readMore.innerHTML = 'Lire la suite <img src="./assets/images/chevron-up.svg">';
   } else {
-    moreText.style.display="block";
+    setTimeout(() => {
+      moreText.style.display="block";
+      moreText.style.opacity=1;
+    },300)
     console.log("show text")
     readMore.innerHTML = 'Lire moins <img src="./assets/images/chevron-down.svg">';
   }

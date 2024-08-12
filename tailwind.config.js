@@ -53,6 +53,10 @@ module.exports = {
       display: {
         'none': 'none',
       },
+      fontSize:{
+        'clamp' :"clamp(12px, 3.16vw, 16px)",
+        'clamp-h3' : "clamp(9px, 3.6vw, 18px)" 
+      },
       backgroundColor:{
         'transparent' : 'transparent',
       }

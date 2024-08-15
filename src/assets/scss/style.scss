@@ -113,7 +113,8 @@
 
 /*Styles button Prev / Next */
 .btn-click{
-   @apply absolute right-[8px] top-[59%];
+   @apply absolute right-0 top-[61%] 3xl:top-auto 3xl:right-1
+    sm:position-inherit sm:inset-0 sm:mx-auto;
 }
 /* ALL button slick / Prev / Next */ 
 button{
@@ -370,4 +371,10 @@ button{
       padding-left: clamp(15px , 6vw, 30px);
       padding-right: clamp(15px , 6vw, 30px);
    }
+   .position-inherit {
+      position: inherit;
+    }
+    .b-solid{
+      border-bottom: 1px solid theme('colors.accent');
+    }
 }

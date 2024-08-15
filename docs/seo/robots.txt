@@ -1,0 +1,7 @@
+
+      User-agent: *
+      Disallow: /private/
+      Allow: /public/
+      
+      Sitemap: http://localhost:3000/seo/sitemap.xml
+    

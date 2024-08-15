@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    <url>
+        
+        <loc>http://localhost:3000/404.pug</loc>
+    
+        
+        <lastmod>2024-08-15T11:08:09.546Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>http://localhost:3000/about.pug</loc>
+    
+        
+        <lastmod>2024-08-11T16:47:08.333Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>http://localhost:3000/blog.pug</loc>
+    
+        
+        <lastmod>2024-08-11T16:42:41.532Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>http://localhost:3000/contact.pug</loc>
+    
+        
+        <lastmod>2024-08-11T16:42:42.382Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>http://localhost:3000/faq.pug</loc>
+    
+        
+        <lastmod>2024-08-11T16:42:43.302Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>http://localhost:3000/features.pug</loc>
+    
+        
+        <lastmod>2024-08-11T16:46:09.146Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>http://localhost:3000/index.pug</loc>
+    
+        
+        <lastmod>2024-08-15T11:08:06.600Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>http://localhost:3000/layout.pug</loc>
+    
+        
+        <lastmod>2024-08-15T11:04:03.990Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>http://localhost:3000/pricing.pug</loc>
+    
+        
+        <lastmod>2024-08-11T16:45:23.435Z</lastmod>
+    
+    </url>
+    <url>
+        
+        <loc>http://localhost:3000/work.pug</loc>
+    
+        
+        <lastmod>2024-08-11T16:42:39.692Z</lastmod>
+    
+    </url>
+</urlset>

@@ -59,7 +59,7 @@ module.exports = {
       },
       backgroundColor:{
         'transparent' : 'transparent',
-      }
+      },
     },
     variants: {
       display: ['responsive'], // Assurez-vous que vous avez configuré les variantes si vous utilisez les classes responsive

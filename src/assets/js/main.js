@@ -12,7 +12,7 @@ const data = {
       src: "set2.png",
       title: "Template 2",
       description:
-        "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
+       "Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.",
       link : "View Portfolio"
     },
     {
@@ -210,24 +210,27 @@ function updateIcons() {
 
 updateIcons(); // Initial call to set the correct icons on page load
 
-readMore.addEventListener('click', () => {
-  console.log("read more");
-  if (open) {
-    setTimeout(() => {
-      moreText.style.display="none";
-    },300)
-    console.log("remove text")
-    readMore.innerHTML = 'Lire la suite <img src="./assets/images/chevron-up.svg">';
-  } else {
-    setTimeout(() => {
-      moreText.style.display="block";
-      moreText.style.opacity=1;
-    },300)
-    console.log("show text")
-    readMore.innerHTML = 'Lire moins <img src="./assets/images/chevron-down.svg">';
-  }
-  open = !open; // Toggle the state
-});
-moreText.style.display = "none";
-
+if (readMore && moreText) {
+  readMore.addEventListener('click', () => {
+    console.log("read more");
+    if (open) {
+      setTimeout(() => {
+        moreText.style.display = "none";
+      }, 300);
+      console.log("remove text");
+      readMore.innerHTML = 'Lire la suite <img src="./assets/images/chevron-up.svg">';
+    } else {
+      setTimeout(() => {
+        moreText.style.display = "block";
+        moreText.style.opacity = 1;
+      }, 300);
+      console.log("show text");
+      readMore.innerHTML = 'Lire moins <img src="./assets/images/chevron-down.svg">';
+    }
+    open = !open; // Toggle the state
+  });
+  
+  // Initially hide the moreText element
+  moreText.style.display = "none";
+}
 

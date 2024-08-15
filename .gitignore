@@ -15,7 +15,7 @@ package-lock.json
 src/pages/layout.pug
 
 ## docs ## 
-docs/
+# docs/
 
 # Seo
-docs/seo/*
+# docs/seo/*

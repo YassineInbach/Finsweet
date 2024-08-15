@@ -273,20 +273,25 @@ button{
    @apply mb-[26px] pb-1;
    border-bottom: 2px solid #ECECF1 ;
    &:first-child{
-      summary > div {
-         h3{
-           @apply ml-[5px];
+      summary {
+         @apply list-none;
+         & > div {
+            h3{
+              @apply ml-[5px];
+            }
          }
       }
-   }
-   &:last-child{
-      @apply border-none;
    }
    .summary_after::after{
       content: url("../images/plus.png");
     }
    .summary_after.open::after{
       content: url("../images/close.png");
+   }
+  }
+  .list-square:last-child{
+   .accordion_details{
+      border-bottom: none;
    }
   }
 

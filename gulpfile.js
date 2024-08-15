@@ -7,22 +7,38 @@ const autoprefixer = require("autoprefixer");
 const sass = require("gulp-sass")(require("sass"));
 const jsonData = require("./src/data.json");
 const uglify = require("gulp-uglify");
-const babel = require("gulp-babel");
-const concat = require("gulp-concat");
 const cleanCSS = require("gulp-clean-css");
 const browserSync = require("browser-sync").create();
 const sitemap = require('gulp-sitemap');
 const fs = require('fs');
+const path = require("path");
 
-// Initialize BrowserSync
+// Tâche pour recharger le navigateur
 gulp.task("browserSync", function () {
     browserSync.init({
-        server: {
-            baseDir: "./docs",
-            index: "/index.html",
-        }
+      server: {
+        baseDir: "./docs",
+        index: "/index.html",
+      },
+      port: 3000, // Le port sur lequel le serveur va écouter
+      middleware: function (req, res, next) {
+        // Chemin du fichier demandé
+        const filePath = path.join(__dirname, "docs", req.url);
+  
+        // Vérifie si le fichier existe
+        fs.access(filePath, fs.constants.F_OK, (err) => {
+          if (err) {
+            // Le fichier n'existe pas, retourne la page d'erreur 404
+            res.writeHead(404, { 'Content-Type': 'text/html' });
+            fs.createReadStream(path.join(__dirname, "docs", "404.html")).pipe(res);
+          } else {
+            // Le fichier existe, passe à la prochaine fonction middleware
+            next();
+          }
+        });
+      },
     });
-});
+  });
 
 // Tâche pour générer le fichier robots.txt
 gulp.task('Robots', (done) => {

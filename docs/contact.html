@@ -64,57 +64,47 @@
             eiusmod tempor incididunt ut labore.
           </p>
         </div>
-        <form class="form_container" action="">
-          <ul class="flex flex-wrap gap-3 mb-8">
-            <li class="form_list-item">
-              <label class="form_label" for="name">Name</label
-              ><input
+        <form class="form" action="">
+          <div class="flex flex-wrap gap-3 mb-8">
+            <label class="form_label" for="name"
+              >Name *<input
                 class="form_input"
                 type="text"
-                name="name"
+                id="name"
                 placeholder="Enter your name"
-                required
-              />
-            </li>
-            <li class="form_list-item">
-              <label class="form_label" for="email">Email</label
-              ><input
+                required /></label
+            ><label class="form_label" for="email"
+              >Email *<input
                 class="form_input"
                 type="email"
-                name="email"
+                id="email"
                 placeholder="Enter your email"
-                required
-              />
-            </li>
-            <li class="form_list-item">
-              <label class="form_label" for="subject">Subject</label
-              ><input
+                required /></label
+            ><label class="form_label" for="subject"
+              >Subject *<input
                 class="form_input"
                 type="text"
-                name="subject"
+                id="subject"
                 placeholder="Provide context"
-                required
-              />
-            </li>
-            <li class="form_list-item">
-              <label class="form_label" for="subject">Sujet</label
-              ><select class="form_input" name="subject" required>
-                option(value="" disabled selected) Choisissez un sujet
+                required /></label
+            ><label class="form_label" for="subject"
+              >Sujet *<select class="form_input" id="subject" required>
+                <option value="" disabled selected>
+                  Choisissez un sujet *
+                </option>
                 <option value="demande">Demande de renseignements</option>
                 <option value="support">Support technique</option>
                 <option value="feedback">Retour d'information</option>
-              </select>
-            </li>
-            <li class="form_list-item">
-              <label class="form_label" for="message">Message</label
-              ><textarea
+              </select></label
+            ><label class="form_label" for="message"
+              >Message *<textarea
                 class="form_input h-[100px] resize-none"
-                name="message"
+                id="message"
                 required
                 placeholder="Write your  question here"
               ></textarea>
-            </li>
-          </ul>
+            </label>
+          </div>
           <button class="btn">Send Messege</button>
         </form>
       </section>

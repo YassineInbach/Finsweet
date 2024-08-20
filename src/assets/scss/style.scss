@@ -242,32 +242,23 @@ button{
  }
 
  /* Styles form_container */
- .form_container{
+ .form{
    @apply mt-[64px] p-clamp max-w-[1000px] mx-auto bg-grey rounded-3xl;
-   ul{
-      &>:last-child{
+   .form_label{
+      @apply flex items-normal gap-y-2 text-dark-blue font-medium flex-col;
+      flex: 1 1 300px;
+       .form_input{   
+         @apply py-[16px] px-3 rounded-md border border-tint-blue;
+       }
+       &>:last-child{
          @apply flex-auto;
-      }
-      .form_list-item{
-         @apply grid gap-y-2;
-         flex:1 1 300px;
-         .form_label{
-            &::after{
-               content: "*";
-               @apply text-sm text-tint-blue align-middle ml-2;
-            }
-            @apply text-xs  text-dark-blue font-medium;
-         }
-         .form_input{   
-            @apply py-[16px] px-3 rounded-md border border-tint-blue;
-         }
-      }
+       }
    }
    .btn{
       @apply text-grey bg-tint-blue ; 
    }
  }
-
+  
  /*Styles accordion_detail & suammry_after*/
   .accordion_details{
    @apply mb-[26px] pb-1;
@@ -381,5 +372,8 @@ button{
     }
     .b-solid{
       border-bottom: 1px solid theme('colors.accent');
+    }
+    .items-normal{
+      align-items: normal;
     }
 }
